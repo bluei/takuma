@@ -1,0 +1,6 @@
+C02126		Red from Word Original
+E74C3C		Closest red from W3
+BDC3C7		Gray from W3 
+A5A5A5		Gray from Original
+
+E5E5E7		Lt Gray from Original
