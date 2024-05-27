@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  srcLogo: string = "https://res.cloudinary.com/blue-i/image/upload/c_scale,w_150/v1713831606/ook/takuma-rnd-logo-kanji-wht-1200.webp";
+  srcLogo: string = "https://res.cloudinary.com/blue-i/image/upload/c_crop,w_900/c_scale,w_600/v1713831606/ook/takuma-rnd-logo-kanji-wht-1200.webp";
+  // srcLogo200: string = "https://res.cloudinary.com/blue-i/image/upload/c_scale,w_200/v1713831606/ook/takuma-rnd-logo-kanji-wht-1200.webp";
   srcShuri: string = "https://res.cloudinary.com/blue-i/image/upload/c_fill,h_600,w_1200/v1715603335/ook/backgrounds/1024px-Karate_ShuriCastle.jpg"
 }
