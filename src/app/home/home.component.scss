@@ -3,22 +3,30 @@
 }
 
 .logo-sm {
-    width: 100px;
+    width: 7em;
 }
 
 .logo-wrapper {
     flex-basis: 20%
 }
 
-.darkened-image {
+.darkened-image-lg {
     // filter: brightness(50%);
     background:linear-gradient(
         to bottom, rgba(var(--bs-dark-rgb)) 3%,
         rgba(0,0,0,0)), 
-        url('https://res.cloudinary.com/blue-i/image/upload/c_fill,h_600,w_1200/v1715603335/ook/backgrounds/1024px-Karate_ShuriCastle.jpg');
-    // background-image: url('https://res.cloudinary.com/blue-i/image/upload/c_fill,h_600,w_1200/v1715603335/ook/backgrounds/1024px-Karate_ShuriCastle.jpg');
+        url('https://res.cloudinary.com/blue-i/image/upload/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
     min-height: 50em;
+}
+
+.darkened-image-sm {
+    filter: brightness(60%);
+}
+
+.logo-wrapper {
+    position:absolute;
+    top: 4.5em;
 }
 

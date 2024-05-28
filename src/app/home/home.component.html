@@ -1,23 +1,79 @@
-<div class="container-fluid p-0 darkened-image">
-
-    <!-- https://www.w3docs.com/tools/code-editor/8460 -->
-
-    <!-- small Devices -->
-    <div class="d-flex pt-2">
+<!-- Large Devices and above-->
+<div class="container-fluid p-0 d-none d-lg-block bg-dark">
+    <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg" 
+        class="img-fluid position-relative w-100 gradient-top" alt="">
+    <div class="d-flex pt-2 logo-wrapper">
         <div class="flex-shrink-0">
-            <img [src]="srcLogo" class="mx-3 img-fluid logo-lg" alt="Logo">
+            <img [src]="srcLogo" class="mx-3 img-fluid logo-lg shadow" alt="Logo">
         </div>
         <div class="flex-grow-1 ms-1">
-            <p class="fw-light text-white-50 mb-0 fs-4 text-uppercase">Welcome to</p>
+            <p class="fw-light text-white-50 mb-1 fs-4 text-uppercase">Welcome to</p>
             <p class="text-light fw-semibold fs-1 mb-1">Shidokan Takuma</p>
-            <p class="text-white fs-6 fw-light">an extension of the Shorin-Ryu Karatedo Association in
+            <p class="text-white fs-4 fw-light">an extension of the Shorin-Ryu Karatedo Association in
                 Okinawa</p>
         </div>
     </div>
 </div>
 
+<!-- Less than Lg Devices -->
+<div class="container-fluid p-0 d-lg-none shadow">
+    <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg" 
+        class="img-fluid position-relative w-100 darkened-image-sm">
+    <div class="d-flex pt-2 logo-wrapper">
+        <div class="flex-shrink-0">
+            <img [src]="srcLogo" class="mx-3 img-fluid logo-sm shadow" alt="Logo">
+        </div>
+        <div class="flex-grow-1 ms-1">
+            <p class="fw-light text-white-50 mb-0 fs-5 text-uppercase">Welcome to</p>
+            <p class="text-light fw-semibold fs-1 mb-1">Shidokan Takuma</p>
+            <p class="text-white fs-6 lh-1 fw-light">an extension of the Shorin-Ryu Karatedo Association in
+                Okinawa</p>
+        </div>
+    </div>
+</div>
 
-<div class="container mb-3 bg-secondary shadow">
+<div class="container py-3" id="hanging-icons">
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Learn</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Authentic</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+        </div>
+        <div>
+          <h3 class="fs-2">Karate</h3>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary">
+            Primary button
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container mb-3 ">
     <h1>Section</h1>
 </div>
 
