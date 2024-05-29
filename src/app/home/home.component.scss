@@ -1,3 +1,4 @@
+$bs-body-color: red !default;
 .logo-lg {
     width: 10em;
 }
@@ -30,3 +31,20 @@
     top: 4.5em;
 }
 
+.marketing{
+    margin-bottom: 1.5rem;
+    // text-align: center;
+}
+
+
+
+// FEATURETTE
+.featurette {
+
+}
+
+.featurette-heading {
+    font-size: 50px;
+    margin-top: 4rem;
+    letter-spacing: -.05rem;
+}

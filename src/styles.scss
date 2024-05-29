@@ -1,4 +1,17 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+/* import the necessary Bootstrap files */
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+/* make changes to the !default Bootstrap variables */    
+// $body-color: green;
+// change danger color and others to match the branding...
+
+        
+/* finally, import Bootstrap to set the changes! */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
 
 .mt-after-nav {
     // Add spacing below fixed nav bar

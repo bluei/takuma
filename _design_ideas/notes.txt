@@ -59,3 +59,8 @@ November 16,2023.
 
 
 USE CSS VARIABLES TO CHANGE DEFAULT COLORS
+https://stackoverflow.com/questions/66029128/overriding-bootstrap-scss-variables-with-other-bootstrap-variables
+https://medium.com/@kathar.rahul/scss-integration-with-bootstrap-5-in-angular-8e12ddf9b471
+
+I used:
+https://stackoverflow.com/questions/45776055/how-to-extend-modify-customize-bootstrap-with-sass
