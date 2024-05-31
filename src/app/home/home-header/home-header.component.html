@@ -1,1 +1,47 @@
-<p>home-header works!</p>
+<!-- Large Devices and above-->
+<div class="container-fluid p-0 d-none d-lg-block bg-dark shadow position-relative">
+    <!-- Background Image -->
+    <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
+        class="img-fluid w-100" alt="">
+
+    <!-- Logo Area -->
+    <div class="d-flex mt-2 ms-3 logo-wrapper w-100">
+        <div class="flex-shrink-0">
+            <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo">
+        </div>
+
+        <div class="flex-grow-1 ms-3">
+            <p class="text-white-50 fs-4 fw-light text-uppercase mb-1">Welcome to</p>
+            <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
+            <p class="text-white fs-4 fw-light">an extension of the Shōrin-ryū Karatedo Association in
+                Okinawa</p>
+        </div>
+    </div>
+
+    <div class="bottom-center"><a href="#" class="btn btn-primary btn-lg me-4">Get Started</a></div>
+
+</div>
+
+
+<!-- Less than Lg Devices -->
+<div class="container-fluid p-0 d-lg-none shadow position-relative">
+    <!-- Background Image CROP WIDTH ON LEFT TO MAKE TALLER -->
+    <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
+        class="img-fluid position-relative__ w-100 brightness-75">
+
+    <!-- Logo Area -->
+    <div class="d-flex pt-2 logo-wrapper">
+        <div class="flex-shrink-0">
+            <img [src]="srcLogo" class="mx-3 img-fluid logo-sm shadow" alt="Logo">
+        </div>
+
+        <div class="flex-grow-1 ms-1">
+            <p class="text-white-50 fs-5 fw-light  text-uppercase mb-0">Welcome to</p>
+            <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
+            <p class="text-white fs-6 fw-light lh-1 ">an extension of the Shōrin-ryū Karatedo Association in
+                Okinawa</p>
+        </div>
+    </div>
+
+    <div class="bottom-center"><a href="#" class="btn btn-primary me-4">Get Started</a></div>
+</div>

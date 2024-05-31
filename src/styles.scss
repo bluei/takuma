@@ -2,11 +2,11 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
-/* make changes to the !default Bootstrap variables */    
+/* make changes to the !default Bootstrap variables */
 // $body-color: green;
 // change danger color and others to match the branding...
 
-        
+
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -25,9 +25,9 @@
 
 // LOGO
 .logo-wrapper {
-    flex-basis: 20%;
+    // flex-basis: 20%;
     position: absolute;
-    top: 4.5em;
+    top: 1em;
 }
 
 .logo-lg {
@@ -38,7 +38,17 @@
     width: 7em;
 }
 
+.bottom-center {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
 
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
 
 // FEATURETTE
 .featurette-divider {

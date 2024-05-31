@@ -1,56 +1,5 @@
-<!-- Large Devices and above-->
-<div class="container-fluid p-0 d-none d-lg-block bg-dark">
-  <!-- Background Image -->
-  <img
-    src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
-    class="img-fluid _position-relative__ w-100" alt="">
+<app-home-header></app-home-header>
 
-  <!-- Logo Area -->
-  <div class="d-flex pt-2 logo-wrapper">
-
-    <div class="flex-shrink-0">
-      <img [src]="srcLogo" class="mx-3 img-fluid logo-lg shadow" alt="Logo">
-    </div>
-
-    <div class="flex-grow-1 ms-1">
-      <p class="text-white-50 fs-4 fw-light text-uppercase mb-1">Welcome to</p>
-      <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
-      <p class="text-white fs-4 fw-light">an extension of the Shōrin-ryū Karatedo Association in
-        Okinawa</p>
-    </div>
-
-  </div>
-
-</div>
-
-<!-- Less than Lg Devices -->
-<div class="container-fluid p-0 d-lg-none shadow">
-  <!-- Background Image CROP WIDTH ON LEFT TO MAKE TALLER -->
-  <img
-    src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_north,h_440,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
-    class="img-fluid position-relative__ w-100 brightness-75">
-
-    <!-- Logo Area -->
-  <div class="d-flex pt-2 logo-wrapper">
-
-    <div class="flex-shrink-0">
-      <img [src]="srcLogo" class="mx-3 img-fluid logo-sm shadow" alt="Logo">
-    </div>
-
-    <div class="flex-grow-1 ms-1">
-      <p class="text-white-50 fs-5 fw-light  text-uppercase mb-0">Welcome to</p>
-      <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
-      <p class="text-white fs-6 fw-light lh-1 ">an extension of the Shōrin-ryū Karatedo Association in
-        Okinawa</p>
-    </div>
-
-  </div>
-</div>
-
-
-
-
-<!--  CAROUSEL UNDER -->
 <div class="container">
 
   <!-- START THE FEATURETTES -->
@@ -58,18 +7,18 @@
   <div class="row featurette mt-4">
 
     <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">Authentic <span class="text-muted">Lineage</span></h2>
+      <h2 class="featurette-heading lh-1">Authentic <span class="text-muted">Lineage</span></h2>
       <p class="lead">Since the 1980s we've been dedicated students and friends of Iha Seikichi, Hanshi 10th Dan,
         and highest ranking Shōrin-ryū master in the United States.
       </p>
       <p class="lead">
-        In 2024 we were hoored to be accepted under Morinobu Maeshiro ( 真栄城 守信 ),
+        In 2024 we were honored to be accepted under Morinobu Maeshiro ( 真栄城 守信 ),
         Hanshi 10th Dan and President of the world Shorinryu karatedo Association based in Naha, Okinawa.
       </p>
       <p class="lead">
-        In May 2020, the Okinawa Prefecture Government designated each of these masters as an "Intangible Cultural Asset
-        Holder
-        in the Field of Okinawan Karate", a designation granted to only 20 karateka ever.
+        In May 2020, the Okinawa Prefecture Government designated each as an
+        "Intangible Cultural Asset Holder in the Field of Okinawan Karate", a designation granted to only 20 karateka
+        ever.
         [link to article]
       </p>
       <a href="#" class="btn btn-link">
@@ -80,29 +29,32 @@
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_center,h_500,w_500/v1716947085/ook/people/maeshiro_mayne.jpg"
         class="featurette-image img-fluid mx-auto shadow-sm" alt="">
+      <figcaption class="figure-caption text-center">
+        Morinobu Maeshiro, Hanshi 10th Dan with<br>Allen Mayne, Hanshi, 9th Dan, April 2024
+      </figcaption>
     </div>
   </div>
 
   <hr class="featurette-divider">
 
-  
+  <!-- COMMITMENT -->
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
-
-      <!-- Commitment -->
-      <h2 class="featurette-heading fw-normal lh-1">Our <span class="text-muted">Commitment</span></h2>
+      <h2 class="featurette-heading lh-1">Our <span class="text-muted">Commitment</span></h2>
       <p class="lead">
-        Teaching and practicing karate is our passion, but none of our instructors do this for a living.
-        Unlike commercialized schools that are focused on profit,
-        we invest time to ensure you learn to apply effective techniques.
+        Teaching and practicing karate is our passion, yet none of our instructors do this for a living.
       </p>
       <p class="lead">
-        Whatever your goals, in karate or in life, we will help you achieve them.
-        It's fun, rewarding, and the skills you lean will go with you everywhere.
+        Unlike commercialized schools that focus on profit, we invest the time to ensure you learn to apply effective
+        techniques.
+      </p>
+      <p class="lead">
+
+        Whatever your goals, in karate or life, we will help you achieve them.
       </p>
 
-      <a href="#" class="btn btn-primary">
-        Take the first Step!
+      <a href="#" class="btn btn-outline">
+        What to Expect...
       </a>
     </div>
     <div class="col-md-5 order-md-1">
@@ -129,9 +81,7 @@
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_center,h_500,w_500/v1716947085/ook/people/maeshiro_mayne.jpg"
         class="featurette-image img-fluid mx-auto shadow-sm" alt="">
-      <figcaption class="figure-caption text-center">
-        Allen Mayne, Hanshi, 9th Dan with <br>Morinobu Maeshiro Hanshi 10th Dan<br>Started 1980
-      </figcaption>
+
     </div>
     <div class="row mt-4 text-center">
       <div class="col-md-4 col-sm-6">
@@ -164,7 +114,7 @@
 
   <hr class="featurette-divider">
 
-  <!-- Technique -->
+  <!-- TECHNIQUE -->
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading lh-1">Effective <span class="text-muted">Technique</span></h2>
@@ -203,30 +153,41 @@
 
   <!-- Commitment -->
   <div class="row featurette">
-    <div class="col-md-7 order-md-2">
+    <div class="col-md-4 order-md-1">
       <h2 class="featurette-heading lh-1">Start <span class="text-muted">Today</span></h2>
       <p class="lead">
-        What to expect..
+        It's fun, rewarding, and the skills you learn will go with you everywhere.
       </p>
 
-      New content Fun, inclusive, patient. Build skills each class.
-      <ul>
-        <li>Kata = forms to teach techniques and build balance and coordination. </li>
-        <li>Kumite = 2-person applications to practice of those techniques adding timing and control</li>
-        <li>Kata = forms to teach techniques and build balance and coordination. </li>
-        <li>Bunkai = defending attack from a group . Building on skills from kata and bunkai. Lots of fun.</li>
-        <li>Individual and group instruction. </li>
-      </ul>
+      <p class="lead">
+        Sticky footer with Phone link?
+      </p>
 
-      <a href="#" class="btn btn-primary">
-        Take the first Step!
-      </a>
+      <!-- <div class="lead">
+        <ul>
+          <li>Kata = forms to teach techniques and build balance and coordination. </li>
+          <li>Kumite = 2-person applications to practice of those techniques adding timing and control</li>
+          <li>Kata = forms to teach techniques and build balance and coordination. </li>
+          <li>Bunkai = defending attack from a group . Building on skills from kata and bunkai. Lots of fun.</li>
+          <li>Individual and group instruction. </li>
+        </ul>
+
+        <a href="#" class="btn btn-primary">
+          Schedule a Visit
+        </a>
+      </div> -->
+
+
+
+
     </div>
-    <div class="col-md-5 order-md-1">
+    <div class="col-md-8 order-md-2">
       <img
-        src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,w_500/v1706841204/ook/ClassPhoto2023_1200.png"
+        src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,q_auto/v1706841204/ook/ClassPhoto2023_1200.png"
         alt="" class="img-fluid mx-auto featurette-image shadow">
     </div>
+
+
   </div>
 
 
