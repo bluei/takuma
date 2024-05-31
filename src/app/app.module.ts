@@ -7,6 +7,8 @@ import { AngularExampleComponent } from './angular-example/angular-example.compo
 import { HomeComponent } from './home/home.component';
 import { InstructorsComponent } from './instructors/instructors.component';
 import { Test1Component } from './test1/test1.component';
+import { HomeHeaderComponent } from './home/home-header/home-header.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { Test1Component } from './test1/test1.component';
     AngularExampleComponent,
     HomeComponent,
     InstructorsComponent,
-    Test1Component
+    Test1Component,
+    HomeHeaderComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
