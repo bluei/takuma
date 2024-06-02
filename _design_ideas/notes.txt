@@ -57,6 +57,13 @@ November 16,2023.
 
 
 
+IMAGES
+Morinobu Full standing
+src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_center,h_800,w_800/v1716947085/ook/people/maeshiro_mayne.jpg"
+
+
+
+
 
 USE CSS VARIABLES TO CHANGE DEFAULT COLORS
 https://stackoverflow.com/questions/66029128/overriding-bootstrap-scss-variables-with-other-bootstrap-variables
@@ -64,3 +71,25 @@ https://medium.com/@kathar.rahul/scss-integration-with-bootstrap-5-in-angular-8e
 
 I used:
 https://stackoverflow.com/questions/45776055/how-to-extend-modify-customize-bootstrap-with-sass
+
+
+
+VIDEOS
+https://www.youtube.com/watch?v=xpJz51FSPOQ
+
+Fun Beginning
+https://www.youtube.com/watch?v=i5xd52F--tw
+
+
+SHORTS
+Iha
+https://www.youtube.com/watch?v=ehQWLacwIYw&list=PLtdCugUAQVydQb26WqgT-p6SYBbBULiB3&index=37
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ehQWLacwIYw?si=GLu4o15kXq9ZjTOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+MOrinobu
+https://www.youtube.com/watch?v=tOblKQOAkZc&list=PLtdCugUAQVydQb26WqgT-p6SYBbBULiB3&index=37
+
+
