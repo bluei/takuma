@@ -3,7 +3,7 @@
 <div class="container">
 
   <!-- START THE FEATURETTES -->
-  <!-- LINEAGE -->
+  <!-- AUTHENTIC LINEAGE -->
   <div class="row featurette mt-4">
 
     <div class="col-md-7">
@@ -16,18 +16,19 @@
         Hanshi 10th Dan and President of the world Shorinryu karatedo Association based in Naha, Okinawa.
       </p>
       <p class="lead mb-1">
-        On May 19 2020, the Okinawa Prefecture Government designated each as an
-        "Intangible Cultural Asset Holder in the Field of Okinawan Karate". 
-        This recognition of authenticity and historical importance 
-        has only been granted to 20 karateka ever.[link to article]
+        On May 19 2020, both Iha and Maeshiro received the designation of
+        "Intangible Cultural Asset Holder in the Field of Okinawan Karate" 
+        by the Okinawa Prefecture Government.
+        This recognition of authenticity and historical importance
+        has only been granted to 20 karateka ever.
       </p>
-      <p class="lead">
+      <!-- <p class="lead">
         Okinawan karate was born from a need to defend against life-threatening danger.
         A mature attitude is required to safely practice techniques, many of which are illegal in conventional sport
         styles.
-      </p>
+      </p> -->
       <div class="mb-4">
-        <a [routerLink]="'/lineage'"  class="btn btn-outline-secondary">
+        <a [routerLink]="'/lineage'" class="btn btn-outline-secondary">
           More on lineage...
         </a>
       </div>
@@ -84,72 +85,87 @@
 
   <hr class="featurette-divider">
 
+
+
   <!-- EXPERIENCE -->
   <div class="row featurette">
-    <div class="col-md-7 position-relative">
-      <h2 class="featurette-heading lh-1">Unmatched <span class="text-muted">Experience</span></h2>
 
-      <p class="lead">
-        Our 4 lead instructors collectively have over 130 yrs experience.
-        Advanced degree tests are held in Okinawa and certified by the senior masters to ensure integrity
-        of the style.
-      </p>
+    <!-- LEFT COL -->
+    <div class="col-md-7 d-flex flex-column">
+      <!--  left row 1 -->
+      <div class="row mb-auto">
+        <div class="col-md-12">
+          <h2 class="featurette-heading lh-1">Unmatched <span class="text-muted">Experience</span></h2>
+          <p class="lead">
+            Our 4 lead instructors collectively have over 130 yrs experience.
+            Advanced degree tests are held in Okinawa and certified by the senior masters to ensure integrity
+            of the style.
+          </p>
+        </div>
+      </div>
 
-      <!-- mike, mark, scott -->
-      <div class="row mt-3 text-center position-absolute" style="bottom:0;" >
 
 
-        <div class="col-md-4 col-sm-6">
-          <img
+
+
+      <!-- left row 2 -->
+      <div class="row justify-content-evenly">
+
+        <div class="col-sm-6 col-md-4 text-center">
+          <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_face:auto,h_240,w_200/v1715605134/ook/people/Mike_aspect_240_320.jpg"
             alt="Mike Dantuma">
-          <figcaption class="figure-caption text-center">
+          <figcaption class="figure-caption">
             Mike Dantuma, 8th Dan<br>Started 1982
           </figcaption>
         </div>
-
-        <div class="col-md-4 col-sm-6">
-          <img
+        <div class="col-sm-6 col-md-4  text-center">
+          <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,e_sharpen:100,g_face:center,h_880,w_800/c_fill,h_240,w_200/v1670180171/ook/people/Scott_aspect_240_320.jpg"
             alt="Scott Morey">
           <figcaption class="figure-caption text-center">
             Scott Morey, 7th Dan<br>Started 1988
           </figcaption>
         </div>
-
-        <div class="col-md-4 col-sm-6 text-center">
-          <img
+        <div class="col-sm-6 col-md-4  text-center">
+          <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,e_sharpen:100,g_face:center,h_880,w_800/c_fill,h_240,w_200/v1670180172/ook/people/Mark_aspect_240_320.jpg"
             alt="">
-          <figcaption class="figure-caption">
+          <figcaption class="figure-caption text-center">
             Mark Talbot, 7th Dan<br>Started 1988
           </figcaption>
         </div>
 
       </div>
+      <!-- end row 2 -->
+
+
     </div>
 
     <!-- Mayne Column -->
-    <div class="col-md-5">
+    <div class="col-md-5 text-center">
       <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/c_crop,h_1800,w_1800,x_600,y_1100/c_scale,q_auto:best,w_1000/v1716947090/ook/people/tsuha_mayne.jpg"
-        class="featurette-image img-fluid mx-auto shadow-1" 
-        alt="">
-        <figcaption class="figure-caption">
-          Kiyoshi Tsuha Sensei with Allen Mayne, Okinawa, April 2024.
-        </figcaption>
+        class="featurette-image img-fluid mx-auto shadow-1" alt="">
+      <figcaption class="figure-caption">
+        Kiyoshi Tsuha Sensei with Allen Mayne<br>
+        Okinawa, April 2024.
+      </figcaption>
 
     </div>
 
 
   </div>
+
+
+
 
   <div class="container">
     <hr class="featurette-divider">
   </div>
 
-  
+
 
   <!-- TECHNIQUE -->
   <div class="row featurette">
@@ -193,11 +209,11 @@
     <div class="col-md-5 order-md-1">
       <h2 class="featurette-heading lh-1">Schedule a <span class="text-muted">Visit</span></h2>
       <p class="lead fs-3 lh-1">
-        Take the first step and give us a call! 
+        Take the first step and give us a call!
       </p>
 
       <p class="lead">
-        It's fun, rewarding, and the skills you learn are for life. 
+        It's fun, rewarding, and the skills you learn are for life.
         [Add 6-week trial offer, class times, call to schedule a visit, move map to footer with class times]
       </p>
 
