@@ -1,9 +1,9 @@
 <app-home-header></app-home-header>
 
-<div class="container">
 
-  <!-- START THE FEATURETTES -->
-  <!-- AUTHENTIC LINEAGE -->
+
+<!-- AUTHENTIC LINEAGE -->
+<div class="container">
   <div class="row featurette mt-4">
 
     <div class="col-md-7">
@@ -17,16 +17,12 @@
       </p>
       <p class="lead mb-1">
         On May 19 2020, both Iha and Maeshiro received the designation of
-        "Intangible Cultural Asset Holder in the Field of Okinawan Karate" 
+        "Intangible Cultural Asset Holder in the Field of Okinawan Karate"
         by the Okinawa Prefecture Government.
         This recognition of authenticity and historical importance
         has only been granted to 20 karateka ever.
       </p>
-      <!-- <p class="lead">
-        Okinawan karate was born from a need to defend against life-threatening danger.
-        A mature attitude is required to safely practice techniques, many of which are illegal in conventional sport
-        styles.
-      </p> -->
+
       <div class="mb-4">
         <a [routerLink]="'/lineage'" class="btn btn-outline-secondary">
           More on lineage...
@@ -52,10 +48,15 @@
 
     </div>
   </div>
+</div>
 
+<div class="container">
   <hr class="featurette-divider">
+</div>
 
-  <!-- COMMITMENT -->
+<!-- COMMITMENT -->
+<div class="container">
+
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading lh-1">Our <span class="text-muted">Commitment</span></h2>
@@ -82,18 +83,20 @@
         alt="" class="img-fluid mx-auto featurette-image shadow-1">
     </div>
   </div>
+</div>
 
+<div class="container">
   <hr class="featurette-divider">
+</div>
 
-
-
-  <!-- EXPERIENCE -->
+<!-- EXPERIENCE -->
+<div class="container">
   <div class="row featurette">
 
-    <!-- LEFT COL -->
-    <div class="col-md-7 d-flex flex-column">
-      <!--  left row 1 -->
-      <div class="row mb-auto">
+    <!-- Left Column -->
+    <div class="col-md-7 d-flex flex-column pt-2">
+      <!-- Left Column, Row 1 -->
+      <div class="row">
         <div class="col-md-12">
           <h2 class="featurette-heading lh-1">Unmatched <span class="text-muted">Experience</span></h2>
           <p class="lead">
@@ -104,14 +107,11 @@
         </div>
       </div>
 
+      <!-- Left column, row 2 -->
+      <div class="row justify-content-evenly mt-auto"> <!-- mt-auto pushes 3 instructors to bottom of row -->
 
-
-
-
-      <!-- left row 2 -->
-      <div class="row justify-content-evenly">
-
-        <div class="col-sm-6 col-md-4 text-center">
+        <!-- mike -->
+        <div class="col-5 col-md-4 pt-3 pt-md-0 text-center">
           <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_face:auto,h_240,w_200/v1715605134/ook/people/Mike_aspect_240_320.jpg"
             alt="Mike Dantuma">
@@ -119,7 +119,8 @@
             Mike Dantuma, 8th Dan<br>Started 1982
           </figcaption>
         </div>
-        <div class="col-sm-6 col-md-4  text-center">
+        <!-- scott -->
+        <div class="col-5 col-md-4 pt-3 pt-md-0 text-center">
           <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,e_sharpen:100,g_face:center,h_880,w_800/c_fill,h_240,w_200/v1670180171/ook/people/Scott_aspect_240_320.jpg"
             alt="Scott Morey">
@@ -127,7 +128,7 @@
             Scott Morey, 7th Dan<br>Started 1988
           </figcaption>
         </div>
-        <div class="col-sm-6 col-md-4  text-center">
+        <div class="col-5 col-md-4 pt-3 pt-md-0 text-center">
           <img class="img-fluid shadow-1"
             src="https://res.cloudinary.com/blue-i/image/upload/c_crop,e_sharpen:100,g_face:center,h_880,w_800/c_fill,h_240,w_200/v1670180172/ook/people/Mark_aspect_240_320.jpg"
             alt="">
@@ -142,8 +143,8 @@
 
     </div>
 
-    <!-- Mayne Column -->
-    <div class="col-md-5 text-center">
+    <!-- Right Column -->
+    <div class="col-md-5 text-center pt-4 pt-md-0">
       <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/c_crop,h_1800,w_1800,x_600,y_1100/c_scale,q_auto:best,w_1000/v1716947090/ook/people/tsuha_mayne.jpg"
@@ -152,23 +153,19 @@
         Kiyoshi Tsuha Sensei with Allen Mayne<br>
         Okinawa, April 2024.
       </figcaption>
-
     </div>
 
-
   </div>
+</div>
+
+<div class="container">
+  <hr class="py-3">
+</div>
 
 
-
-
-  <div class="container">
-    <hr class="featurette-divider">
-  </div>
-
-
-
-  <!-- TECHNIQUE -->
-  <div class="row featurette">
+<!-- TECHNIQUE -->
+<div class="container">
+  <div class="row featurette bg-light">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading lh-1">Effective <span class="text-muted">Technique</span></h2>
       <p class="lead">
@@ -176,19 +173,17 @@
         A mature attitude is required to safely practice techniques, many of which are illegal in conventional sport
         styles.
       </p>
-      <p class="lead">
-        No flying movie theatrics. No wasted motion. No pads.
 
+      <p class="lead">
+        No flying movie theatrics. No wasted motion.
       </p>
       <p class="lead">
         You will learn how to comfortably block full force attacks without pads,
-        while developing the control to avoid hurting lower ranked students. Most importantly, you will not have to
-        wonder
-        “would this really work?”
+        while developing the control to avoid hurting lower ranked students.
       </p>
 
-      <a href="#" class="btn btn-secondary">
-        Start YOUR journey
+      <a href="#" class="btn btn-light mb-2">
+        Get Started
       </a>
     </div>
     <div class="col-md-5 order-md-1">
@@ -201,12 +196,12 @@
 
     </div>
   </div>
+</div>
 
-  <hr class="featurette-divider">
-
-  <!-- START TODAY -->
+<!-- START TODAY -->
+<div class="container">
   <div class="row featurette">
-    <div class="col-md-5 order-md-1">
+    <div class="col-md-5">
       <h2 class="featurette-heading lh-1">Schedule a <span class="text-muted">Visit</span></h2>
       <p class="lead fs-3 lh-1">
         Take the first step and give us a call!
@@ -217,9 +212,7 @@
         [Add 6-week trial offer, class times, call to schedule a visit, move map to footer with class times]
       </p>
 
-      <iframe width="100%" height="285" style="border:0" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJo9L_Mo2zGYgRNGqjqwHIl1o&key=AIzaSyCd7Cmh5IZHVkspmLaVlC9_ly7TBF_nj9c">
-      </iframe>
+
 
     </div>
     <div class="col-md-7 order-md-2">
@@ -227,33 +220,43 @@
         src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,e_sharpen,g_auto,q_auto/v1706841204/ook/ClassPhoto2023_1200.png"
         alt="" class="img-fluid mx-auto featurette-image shadow-1">
     </div>
-
-
   </div>
+</div>
 
-
-
+<!-- map -->
+<div class="container py-3">
+  <div class="row bg-secondary text-light">
+    <div class="col-md-5 bg-warning">
+      <iframe width="100%" height="285" style="border:0" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJo9L_Mo2zGYgRNGqjqwHIl1o&key=AIzaSyCd7Cmh5IZHVkspmLaVlC9_ly7TBF_nj9c">
+      </iframe>
+    </div>
+    <div class="col-md-7">
+      <p class="lead">class times</p>
+    </div>
+  </div>
 </div>
 
 
-
-
-
 <!-- FOOTER -->
-<div class="container">
-  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<div class="container-fluid bg-dark bg-gradient sticky-bottom mt-1">
+  
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-2">
+
     <div class="col-md-4 d-flex align-items-center">
-      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-light text-decoration-none lh-1">
+        links1
         <svg class="bi" width="30" height="24">
           <use xlink:href="#bootstrap"></use>
         </svg>
       </a>
-      <span class="mb-3 mb-md-0 text-muted">© 2024 Shidokan Takuma - Original Okinawan Karate</span>
+      <span class="small mb-3 mb-md-0 text-light">© 2024 Shidokan Takuma - Original Okinawan Karate</span>
     </div>
 
     <a href="tel:+16169656932" class="btn btn-primary btn-lg">(616) 965-6932</a>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex text-light">
+      links2
       <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
             <use xlink:href="#twitter"></use>
           </svg></a></li>
