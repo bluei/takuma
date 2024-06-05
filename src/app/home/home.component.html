@@ -3,8 +3,8 @@
 
 
 <!-- AUTHENTIC LINEAGE -->
-<div class="container">
-  <div class="row featurette mt-4">
+<div class="container-fluid bg-light">
+  <div class="row featurette p-4">
 
     <div class="col-md-7">
       <h2 class="featurette-heading lh-1">Authentic <span class="text-muted">Lineage</span></h2>
@@ -16,14 +16,13 @@
         Hanshi 10th Dan and President of the world Shorinryu karatedo Association based in Naha, Okinawa.
       </p>
       <p class="lead mb-1">
-        On May 19 2020, both Iha and Maeshiro received the designation of
-        "Intangible Cultural Asset Holder in the Field of Okinawan Karate"
-        by the Okinawa Prefecture Government.
-        This recognition of authenticity and historical importance
+        On May 19 2020, the Okinawa Prefecture Government designated both Iha and Maeshiro as 
+        <span class="text-success">"Intangible Cultural Asset Holder in the Field of Okinawan Karate"</span>.
+        This recognition of authenticity and living historical importance
         has only been granted to 20 karateka ever.
       </p>
 
-      <div class="mb-4">
+      <div class="mt-2">
         <a [routerLink]="'/lineage'" class="btn btn-outline-secondary">
           More on lineage...
         </a>
@@ -50,37 +49,39 @@
   </div>
 </div>
 
-<div class="container">
-  <hr class="featurette-divider">
-</div>
+<!-- <div class="container-fluid bg-dark featurette-divider">
+  &nbsp;
+</div> -->
 
 <!-- COMMITMENT -->
-<div class="container">
+<div class="container-fluid bg-dark">
 
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading lh-1">Our <span class="text-muted">Commitment</span></h2>
-      <p class="lead">
-        We love teaching and practicing, but none of our instructors do this for a living.
+  <div class="row featurette text-light p-4">
+    <div class="col-md-7 order-md-2 d-flex flex-column">
+      <h2 class="featurette-heading lh-1"><span class="text-secondary">Our</span> Commitment</h2>
+      <p class="lead fs-3 text-secondary">
+        Karate is our passion, but we don't do it for a living.
       </p>
       <p class="lead">
-        Unlike commercialized schools that focus on profit, we invest the time to ensure you learn to apply effective
-        techniques.
+        We invest time to ensure you learn and can apply effective techniques. 
       </p>
       <p class="lead">
-        Whatever your goals, in karate or life, we will help you achieve them.
+        Unlike commercialized schools driven by profit, we don't sell promotions and membership cost is low.
+        <!-- https://getbootstrap.com/docs/5.3/utilities/object-fit/
+        https://www.geeksforgeeks.org/how-to-add-a-background-image-using-bootstrap-5/ -->
       </p>
 
-      <div class="mb-4">
-        <a href="#" class="btn btn-outline-secondary">
-          What to Expect...
+      <div class="mt-auto">
+        <a href="#" class="btn btn-secondary">
+          Schedule a Visit
         </a>
       </div>
     </div>
     <div class="col-md-5 order-md-1">
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/c_fill,e_sharpen:100,g_center,h_340,w_500/v1706841202/ook/people/20230220_Instructors_1200.png"
-        alt="" class="img-fluid mx-auto featurette-image shadow-1">
+        alt="" 
+        class="img-fluid mx-auto featurette-image shadow-1 mt-2 mt-md-0">
     </div>
   </div>
 </div>
@@ -164,8 +165,8 @@
 
 
 <!-- TECHNIQUE -->
-<div class="container">
-  <div class="row featurette bg-light">
+<div class="container bg-light">
+  <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading lh-1">Effective <span class="text-muted">Technique</span></h2>
       <p class="lead">
@@ -203,7 +204,7 @@
   <div class="row featurette">
     <div class="col-md-5">
       <h2 class="featurette-heading lh-1">Schedule a <span class="text-muted">Visit</span></h2>
-      <p class="lead fs-3 lh-1">
+      <p class="lead fs-3 lh-1 text-dark">
         Take the first step and give us a call!
       </p>
 
