@@ -6,6 +6,13 @@
 // $body-color: green;
 // change danger color and others to match the branding...
 
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+  "9x16": calc(16 / 9 * 100%)
+);
 
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
