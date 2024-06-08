@@ -1,6 +1,14 @@
 C02126		Red from Word Original
-E74C3C		Closest red from W3
-BDC3C7		Gray from W3 
 A5A5A5		Gray from Original
 
 E5E5E7		Lt Gray from Original
+
+-- Try override BG-Dark with one of these
+36291C     Dark Brown from plank left of Mike's knee in 4 instructors 54, 41, 28
+312217     Darker Brown from plank right of my knee in 4 instructors (49, 34, 23)
+
+
+
+4D4E22      Green from Maeshiro's certificate background
+RGB = 77, 78, 34
+Hex = #
