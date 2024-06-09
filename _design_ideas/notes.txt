@@ -1,13 +1,39 @@
+NEXT STEPS
+Change Colors in variables to include the rght gray and the new green.  
+    Make Primary the same as the logo red.
+    Test the dark brown as a bgDark color
+
+HEADER 
+rework logo area.
+Parallax on the Header and icons
+Animations on the Headings
+
+AUTHENTIC
+Make taller
+Carousel Morinobu and Tsuha and Iha with captions
+Get to know Sensei Morinobu
+Get to know Iha - not too big
+
+TECHNIQUE
+Add video of Test: Kata, Bunkai
+Overlay parallax bg of school interior
+
+
+FOOTER
+Add Class Times
+Fix Map
+Not a fixed footer - put number in navbar instead of search
+
+
+
+
+
+
 https://en.wikipedia.org/wiki/Sh%C5%8Drin-ry%C5%AB
 
 Sensei Iha is the senior most practitioner of Okinawa Shorin-ryu residing in the United States 
 and is ranked a Hanshi 10th Dan by the Okinawa Shorin-ryu Karate-do Association of Naha, Okinawa. 
 He teaches Chibana-style shorin-ryu and refers to his method as Okinawa Shorin-ryu Shidokan Karatedo. 
-
-On May 19th 2020, the Okinawa Prefecture Government designated him as 
-Intangible Cultural Asset Holder in the category of Okinawa Karate and Kobujutsu
-an Intangible Cultural Asset Holder in the category of Okinawa Karate and Kobujutsu, 
-a designation granted to only 20 karateka ever
 
 
 https://travel67.com/2020/05/28/intangible-cultural-asset-holders-in-the-field-of-okinawan-karate-and-martial-arts-with-weaponry/

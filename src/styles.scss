@@ -38,6 +38,13 @@ section {
     position: relative;
 }
 
+.heading-divider {
+    height: 4px;
+    width: 70px;
+    background: linear-gradient(to right, #C02126,#4D4E22);
+    margin: 16px auto;
+}
+
 .bg-image {
     background-image: url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
 }
