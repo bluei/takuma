@@ -7,6 +7,7 @@ HEADER
 rework logo area.
 Parallax on the Header and icons
 Animations on the Headings
+Style the active link: https://youtu.be/TLdivj3K2JQ?si=3jAAYhR-m1fbcfSz&t=2608
 
 AUTHENTIC
 Make taller
