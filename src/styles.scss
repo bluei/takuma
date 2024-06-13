@@ -41,9 +41,26 @@ section {
 .divider-red {
     height: 4px;
     width: 200px;
-    background: #C02126;
+    background: linear-gradient(to right, #C02126,black);
     margin: 16px 0;
 }
+
+.gradient-underline {
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+}
+
+.gradient-underline::after {
+    // background: #C02126;
+    background: linear-gradient(to right, #C02126, E5E5E7);  
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 8px;
+    width: 100%;
+ }
 
 .bg-image {
     background-image: url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);

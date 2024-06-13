@@ -7,6 +7,10 @@ HEADER
 rework logo area.
 Parallax on the Header and icons
 Animations on the Headings
+
+Gradient Underline RED to BLK: https://www.devsamples.com/css/css-gradient-underline
+
+** Can use the same approach in the nav links
 Style the active link: https://youtu.be/TLdivj3K2JQ?si=3jAAYhR-m1fbcfSz&t=2608
 
 AUTHENTIC
