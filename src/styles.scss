@@ -67,9 +67,17 @@ section {
 }
 
 .bg-cover {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.hero-section {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
 }
 
 .bg-overlay {
@@ -83,13 +91,7 @@ section {
     z-index: -1;    // Put the overlay behind the text
 }
 
-.hero-section {
-    min-height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-}
+
 
 .mt-after-nav {
     // Add spacing below fixed nav bar
