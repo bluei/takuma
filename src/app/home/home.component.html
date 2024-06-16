@@ -5,7 +5,7 @@
 <!-- AUTHENTIC -->
 <div class="container-fluid bg-light" id="authentic">
   <!-- First Row -->
-  <div class="row p-4">
+  <div class="row mb-3 p-md-4">
     <div class="col-md-6">
       <h2 class="featurette-heading lh-1"><span class="text-muted">Truly </span>Authentic</h2>
 
@@ -26,11 +26,11 @@
         a recognition of authenticity and historical preservation granted to only 9 masters alive today.
       </p>
 
-      <div class="mt-2">
+      <!-- <div class="mt-2">
         <a [routerLink]="'/lineage'" class="btn btn-secondary">
           More on lineage...
         </a>
-      </div>
+      </div> -->
     </div>
 
     <div class="col-md-6 pt-md-5">
@@ -42,9 +42,9 @@
             <img
               src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,g_xy_center,q_auto:best,y_1500/v1716947085/ook/people/maeshiro_mayne.jpg"
               class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block carousel-text">
-              <h3 class="">Sensei Maeshiro, Hanshi 10<sup>th</sup> Dan</h3>
-              <p class="fs-5">with Sensei Mayne, Hanshi, 9th Dan, April 2024.</p>
+            <div class="carousel-caption _d-none d-md-block carousel-text pb-1 pt-2">
+              <h5 class="">Sensei Maeshiro, 10<sup>th</sup> Dan</h5>
+              <p class="fs-5 mb-1">with Sensei Mayne, 9th Dan <span class="d-none d-md-inline-block">, April 2024.</span></p>
             </div>
           </div>
           <div class="carousel-item">
@@ -52,9 +52,9 @@
             <img
               src="https://res.cloudinary.com/blue-i/image/upload/c_fill,e_sharpen,g_xy_center,h_450,w_800,y_1800/v1716947090/ook/people/tsuha_mayne.jpg"
               class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block carousel-text">
-              <h3 class="">Sensei Tsuha, Hanshi 9<sup>th</sup> Dan</h3>
-              <p class="fs-5">with Sensei Mayne, Hanshi, 9th Dan, April 2024.</p>
+            <div class="carousel-caption carousel-text pb-1 pt-2">
+              <h5 class="">Sensei Tsuha, Hanshi 9<sup>th</sup> Dan</h5>
+              <p class="fs-5 mb-1">with Sensei Mayne, 9th Dan <span class="d-none d-md-inline-block">, April 2024.</span></p>
             </div>
           </div>
           <div class="carousel-item">
@@ -62,9 +62,9 @@
             <img
               src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_crop,e_sharpen,g_north_east,w_800/v1717325517/ook/people/iha_teaching_gr.jpg"
               class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block carousel-text">
-              <h3 class="">Sensei Iha, Hanshi 10<sup>th</sup> Dan</h3>
-              <p class="fs-5">Teaching in Grand Rapids</p>
+            <div class="carousel-caption carousel-text pb-1 pt-2">
+              <h5 class="">Sensei Iha, Hanshi 10<sup>th</sup> Dan</h5>
+              <p class="fs-5 mb-1">Teaching in Grand Rapids</p>
             </div>
           </div>
         </div>
@@ -79,30 +79,6 @@
       </div>
 
 
-
-
-
-
-      <!-- ORIGINAL 2 MAESHIRO IHA -->
-      <!-- <img
-        src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_fill,g_xy_center,q_auto:best,y_1500/v1716947085/ook/people/maeshiro_mayne.jpg"
-        class="featurette-image img-fluid shadow-1 mt-2 mt-md-0" alt="">
-      <figcaption class="figure-caption text-center">
-        Morinobu Maeshiro, Hanshi 10th Dan with<br>Allen Mayne, Hanshi, 9th Dan, April 2024
-      </figcaption>
-
-      <img
-        src="https://res.cloudinary.com/blue-i/image/upload/ar_16:9,c_crop,e_sharpen,g_xy_center,h_450,q_auto:best,w_800,y_0/v1717325517/ook/people/iha_teaching_gr.jpg"
-        class="featurette-image img-fluid shadow-1 mt-3" alt="">
-      <figcaption class="figure-caption text-center">
-        Sensei Seikichi Iha teaching in Grand Rapids<br>
-        with Sensei Allen Mayne
-      </figcaption> -->
-
-
-      <!-- https://res.cloudinary.com/blue-i/image/upload/c_crop,w_800,h_450,ar_16:9,e_improve,e_sharpen/v1717325514/ook/people/mayne_iha_teaching_original.jpg -->
-      <!-- https://res.cloudinary.com/blue-i/image/upload/t_16x9/v1716947090/ook/people/tsuha_mayne.heic -->
-
     </div>
 
   </div>
@@ -111,69 +87,82 @@
 
 
   <!-- Meet Iha and Maeshiro -->
-  <div class="row featurette p-md-4"><!-- 2nd Row -->
+  <div class="row featurette p-md-4 justify-content-end"><!-- 2nd Row -->
 
     <!-- lineage col -->
-    <div class="col-12 col-md-6">
-      <img src="https://res.cloudinary.com/blue-i/image/upload/v1717149829/ook/graphics/Lineage.png" alt=""
-        class="img-fluid featurette-image shadow-1 mt-2 mt-md-0">
-      <figcaption class="figure-caption text-center">
-        Meet Sensei Maeshiro
-      </figcaption>
+    <div class="col-md-6 mb-3">
+      <div class="card h100 shadow">
+        <img src="https://res.cloudinary.com/blue-i/image/upload/v1717149829/ook/graphics/Lineage.png" alt=""
+        class="img-fluid card-img-top p-3">
+        <!-- class="img-fluid featurette-image mt-2 mt-md-0" -->
+      </div>
+      
+      <!-- <figcaption class="figure-caption text-center">
+        About our lineage
+      </figcaption> -->
     </div>
 
     <!-- videos col -->
-    <div class="col-6 text-center d-flex justify-content-evenly">
-      <!-- USE FLEX POSITIONS (d-flex-inline) https://getbootstrap.com/docs/5.0/utilities/flex/ -->
-      <div>
-        <video controls class="img-fluid" style="max-height: 434px;">
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <!-- CARD Maeshiro -->
+      <div class="card h-100 shadow text-center">
+        <video controls class="img-fluid card-img-top">
           <source src="https://res.cloudinary.com/blue-i/video/upload/v1718277386/ook/videos/Maeshiro_short.mp4"
             type="video/mp4">
           Your browser does not support HTML video.
         </video>
-        <figcaption class="figure-caption text-center">
-          Meet Sensei Maeshiro
-        </figcaption>
-      </div>
 
-      <div>
-        <video controls class="img-fluid" style="max-height: 434px;">
-          <source src="https://res.cloudinary.com/blue-i/video/upload/v1718277386/ook/videos/Maeshiro_short.mp4"
+        <div class="card-body p-2">
+          <p class="card-text mb-0">Meet Sensei Maeshiro</p>
+          <p class="small text-muted mt-0">credit: so and so</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-2 mb-3">
+      <!-- CARD TEST -->
+      <div class="card h-100 shadow text-center">
+        <video controls class="img-fluid card-img-top">
+          <!-- https://res.cloudinary.com/blue-i/video/upload/co_rgb:8a2d2d,vc_auto/e_accelerate:15/a_0/v1718277389/ook/videos/Seikichi_Iha_short.mp4 -->
+          <source
+            src="https://res.cloudinary.com/blue-i/video/upload/vc_auto/v1718277389/ook/videos/Seikichi_Iha_short.mp4"
             type="video/mp4">
           Your browser does not support HTML video.
         </video>
-        <figcaption class="figure-caption text-center">
-          Meet Sensei Maeshiro
-        </figcaption>
-      </div>
 
+        <div class="card-body p-2">
+          <p class="card-text mb-0">Meet Sensei Iha</p>
+          <p class="small text-muted mt-0">credit: so and so</p>
+        </div>
+
+      </div>
     </div>
 
   </div> <!-- end 2nd row -->
 </div>
 
 <!-- COMMITMENT -->
-<div id="passion" class="container-fluid bg-dark">
+<div id="passion" class="container-fluid mt-3 bg-dark">
 
   <div class="row featurette text-light p-4">
     <div class="col-md-7 order-md-2 d-flex flex-column">
       <h2 class="featurette-heading lh-1"><span class="text-secondary">Our</span> Passion</h2>
       <p class="lead fs-2 text-secondary">
-        We love teaching karate
+        We love teaching karate, but none of our instructors do it for a living. 
       </p>
       <p class="lead">
-        ...but none of our instructors do this for a living.
-      </p>
-      <p class="lead">
-        Unlike commercialized schools driven by profit, We invest time to ensure you learn to apply effective
+        Unlike commercialized schools driven by profit, we invest time to ensure you learn to apply effective
         techniques.
-        We don't sell promotions and membership cost is low.
+      </p>
+      <p class="lead">
+        We don't sell anything, and membership cost is low.
         <!-- https://getbootstrap.com/docs/5.3/utilities/object-fit/
         https://www.geeksforgeeks.org/how-to-add-a-background-image-using-bootstrap-5/ -->
       </p>
 
       <div class="mt-auto">
-        <a href="#" class="btn btn-secondary">
+        <a href="#" class="btn btn-primary">
           Schedule a Visit
         </a>
       </div>
@@ -320,7 +309,7 @@
 <div class="container">
   <div class="row featurette">
     <div class="col-md-5">
-      <h2 class="featurette-heading lh-1">Schedule a <span class="text-muted">Visit</span></h2>
+      <h2 class="featurette-heading lh-1">Get <span class="text-muted">Started!</span></h2>
       <div class="divider-red"></div>
       <p class="lead fs-3 lh-1 text-dark">
         Take the first step and give us a call!

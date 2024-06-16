@@ -12,14 +12,14 @@ export class InstructorsComponent {
     {
       name: 'Allen Mayne',
       dan: '9',
-      dateStarted: new Date('1978-01-01'),
+      dateStarted: new Date('1979-01-01'),
       imageURL: 'https://res.cloudinary.com/blue-i/image/upload/q_auto:good/v1670180168/ook/people/Allen_aspect_240_320.jpg',
-      bio: 'He is a real nice guy. lskdfj l;skdjf al;sdkfj a;lsdk fjasa sd fasdjkf eruthewruig sdrfkjgs hdkljfa hsdkljfa hsdlk'
+      bio: 'He is a real nice guy. More info to fill in here. Studied under Griffin, Iha, Miyahira, Nakasone'
     },
     {
       name: 'Michael Dantuma',
       dan: '8',
-      dateStarted: new Date('1982-01-01'),
+      dateStarted: new Date('1982-02-01'),
       imageURL: 'https://res.cloudinary.com/blue-i/image/upload/e_blue:15,q_auto:best/v1715605134/ook/people/Mike_aspect_240_320.jpg',
       bio: 'Known as Squatch but also a real nice guy'
     },
@@ -33,7 +33,7 @@ export class InstructorsComponent {
     {
       name: 'Mark Talbot',
       dan: '7',
-      dateStarted: new Date('1989-01-01'),
+      dateStarted: new Date('1988-09-01'),
       imageURL: 'https://res.cloudinary.com/blue-i/image/upload/q_auto:good/v1716205040/ook/people/Mark_aspect_240_320_enhanced.jpg',
       bio: 'Known as Mark but also a real nice guy'
     }
