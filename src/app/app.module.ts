@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { NavComponent } from './nav/nav.component';
 import { TechniqueComponent } from './technique/technique.component';
 import { LineageComponent } from './lineage/lineage.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import AOS from 'aos';
 
 @NgModule({
   declarations: [
@@ -35,4 +36,7 @@ import { GetStartedComponent } from './get-started/get-started.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+}

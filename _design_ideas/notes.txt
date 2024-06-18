@@ -1,5 +1,12 @@
+
 NEXT STEPS
-Change Colors in variables to include the rght gray and the new green.  
+Add Mayne to EXPERIENCE 2 cols wide mobile, 4 wide on MD, 
+
+Move fun video to technique section
+Add CALL and VISIT buttons
+
+
+Change Colors in variables to include the right gray and the new green.  
     Make Primary the same as the logo red.
     Test the dark brown as a bgDark color
 
@@ -13,11 +20,13 @@ Gradient Underline RED to BLK: https://www.devsamples.com/css/css-gradient-under
 ** Can use the same approach in the nav links
 Style the active link: https://youtu.be/TLdivj3K2JQ?si=3jAAYhR-m1fbcfSz&t=2608
 
+EXPERIENCE
+Add Allen.
+Use @for loop for instructor section.
+
+
 AUTHENTIC
-Make taller
-Carousel Morinobu and Tsuha and Iha with captions
-Get to know Sensei Morinobu
-Get to know Iha - not too big
+
 
 TECHNIQUE
 Add video of Test: Kata, Bunkai
