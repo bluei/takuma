@@ -3,9 +3,10 @@
   <div class="row featurette text-light py-4">
     <div class="col-md-7 order-md-2 d-flex flex-column">
       <h2 class="featurette-heading lh-1"><span class="text-secondary">Unmatched</span> Experience</h2>
-      <p class="lead fs-2 text-secondary">
-        With {{collectiveYears()}}+ years of collective experience
+      <p class="lead fs-2">
+        With {{collectiveYears()}}+ years of collective practice
       </p>
+      <div class="divider-red-white"></div>
       <p class="lead">Our instructors personally invest time with you to develop effective
         and practical techniques.</p>
       
@@ -18,22 +19,18 @@
   </div>
   <div class="row featurette text-light py-4">
     <div class="col-md-4">
-      <p class="lead fs-2 text-secondary">
+      <p class="lead fs-2">
         Karate is our lifelong passion.
       </p>
+      
       <p class="lead">None of our instructors do this for a living.
       </p>
       <p class="lead">
         Unlike commercialized schools driven by profit, we don't sell anything and membership cost is low.
       </p>
-
-      <div class="mt-auto">
-        <a href="#" class="btn btn-primary">
-          Schedule a Visit
-        </a>
-      </div>
+      
     </div>
-    <div class="col-6 col-md-2 text-center" *ngFor="let instructor of instructors">
+    <div class="col-6 col-md-2 text-center mb-3" *ngFor="let instructor of instructors">
       <!-- CARD -->
       <div class="card h-100 shadow">
         <img src="{{instructor.thumbURL}}" class="card-img-to img-fluid" alt="Karate Instructor {{instructor.name}}">  <!--style="width:100%"-->
@@ -43,11 +40,9 @@
           <p class="card-text ls-1">Practicing since {{instructor.dateStarted | date:"yyyy"}} <br>
             ({{ calculateYears(instructor.dateStarted) }} years experience)</p>
         </div>
-        <!-- <div class="card-footer">
-          <a href="#" class="btn btn-primary">Card link</a>
-          <a href="#" class="btn btn-secondary">Another link</a>
-        </div> -->
+
       </div>
     </div>
+
   </div>
 </div>

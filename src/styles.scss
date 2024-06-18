@@ -42,9 +42,19 @@ section {
 }
 
 .divider-red {
-    height: 4px;
-    width: 200px;
-    background: linear-gradient(to right, #C02126,black);
+    height: 3px;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #C02126 ,transparent);
+    margin: 16px 0;
+}
+.divider-red-white {
+    height: 3px;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #C02126 ,#E5E5E7);
     margin: 16px 0;
 }
 

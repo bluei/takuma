@@ -6,6 +6,7 @@ import { InstructorsComponent } from './instructors/instructors.component';
 import { GetStartedComponent } from './get-started/get-started.component';
 import { LineageComponent } from './lineage/lineage.component';
 import { TechniqueComponent } from './technique/technique.component';
+import { Test1Component } from './test1/test1.component';
 
 const routes: Routes = [
   {path: "", component:HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: "get-started", component:GetStartedComponent},
   {path: "lineage", component:LineageComponent},
   {path: "technique", component:TechniqueComponent},
+  {path: "test1", component:Test1Component},
   {path: "instructors", component:InstructorsComponent}
 ];
 @NgModule({
