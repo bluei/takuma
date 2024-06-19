@@ -1,24 +1,24 @@
 <div id="experience" class="container-fluid mt-3 bg-dark">
 
-  <div class="row featurette text-light py-4">
+  <div class="row featurette text-light py-5">
     <div class="col-md-7 order-md-2 d-flex flex-column">
-      <h2 class="featurette-heading lh-1"><span class="text-secondary">Unmatched</span> Experience</h2>
-      <p class="lead fs-2">
-        With {{collectiveYears()}}+ years of collective practice
+      <h2 class="featurette-heading lh-1" data-aos="fade-left"><span class="text-secondary">Unmatched</span> Experience</h2>
+      <p class="lead fs-2" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor="#experience">
+        Over {{collectiveYears()}} years combined
       </p>
       <div class="divider-red-white"></div>
-      <p class="lead">Our instructors personally invest time with you to develop effective
+      <p class="lead" data-aos="fade-up">Our instructors personally invest time with you to develop effective
         and practical techniques.</p>
       
     </div>
-    <div class="col-md-5 order-md-1">
+    <div class="col-md-5 order-md-1" data-aos="zoom-in-right">
       <img
         src="https://res.cloudinary.com/blue-i/image/upload/c_fill,e_sharpen:100,g_center,h_340,w_500/v1706841202/ook/people/20230220_Instructors_1200.png"
         alt="" class="img-fluid mx-auto featurette-image shadow-1 mt-2 mt-md-0">
     </div>
   </div>
   <div class="row featurette text-light py-4">
-    <div class="col-md-4">
+    <div class="col-md-4" data-aos="fade-up">
       <p class="lead fs-2">
         Karate is our lifelong passion.
       </p>
@@ -30,15 +30,15 @@
       </p>
       
     </div>
-    <div class="col-6 col-md-2 text-center mb-3" *ngFor="let instructor of instructors">
+    <div class="col-6 col-md-2 text-center mb-3" *ngFor="let instructor of instructors; let i = index">
       <!-- CARD -->
-      <div class="card h-100 shadow">
+      <div class="card h-100 shadow-1" data-aos="fade-up" [attr.data-aos-delay]="(i+1)*50" >
         <img src="{{instructor.thumbURL}}" class="card-img" alt="Karate Instructor {{instructor.name}}">  <!--style="width:100%"-->
-        <div class="card-body">
-          <h5 class="card-title">{{instructor.name}}</h5>
-          <p class="card-text lead mb-1">{{instructor.dan}}<sup>th</sup> Dan</p>
-          <p class="card-text ls-1">Practicing since {{instructor.dateStarted | date:"yyyy"}} <br>
-            ({{ calculateYears(instructor.dateStarted) }} years experience)</p>
+        <div class="card-body p-1">
+          <h5 class="card-title mt-2">{{instructor.name}}</h5>
+          <p class="card-text fs-5 mb-1">{{instructor.dan}}<sup>th</sup> Dan</p>
+          <p class="card-text ls-1">Started {{instructor.dateStarted | date:"MMM yyyy"}} <br>
+            ({{ calculateYears(instructor.dateStarted) }} years)</p>
         </div>
 
       </div>
