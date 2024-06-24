@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 
 @Component({
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
 })
 export class Test1Component {
 
-
+  // ngOnInit(): void {
+  //   cld = cloudinary.videoPlayer('example-player', { cloudName: 'mycloud' });
+  //   cld.source('http://res.cloudinary.com/demo/video/upload/myvideo.mp4');
+  // }
 
 }
