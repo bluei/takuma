@@ -179,3 +179,21 @@ section {
 background-color: rgba(86, 61, 124, 0.15);
 border: 1px solid rgba(86, 61, 124, 0.15);
 }
+
+
+.parallax-header {
+    background: #000;
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.8)
+    ),
+    url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    padding: 40px 0 400px 0;
+}
