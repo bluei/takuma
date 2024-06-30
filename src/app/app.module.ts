@@ -12,6 +12,7 @@ import { NavComponent } from './nav/nav.component';
 import { TechniqueComponent } from './technique/technique.component';
 import { LineageComponent } from './lineage/lineage.component';
 import { GetStartedComponent } from './get-started/get-started.component';
+import { HomeHeaderDevComponent } from './home/home-header-dev/home-header-dev.component';
 // import AOS from 'aos';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { GetStartedComponent } from './get-started/get-started.component';
     NavComponent,
     TechniqueComponent,
     LineageComponent,
-    GetStartedComponent
+    GetStartedComponent,
+    HomeHeaderDevComponent
   ],
   imports: [
     BrowserModule,

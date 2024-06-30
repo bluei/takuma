@@ -184,8 +184,8 @@ border: 1px solid rgba(86, 61, 124, 0.15);
 .parallax-header {
     background: #000;
     background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.8)
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.1)
     ),
     url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
     background-attachment: fixed;
@@ -195,5 +195,8 @@ border: 1px solid rgba(86, 61, 124, 0.15);
 }
 
 .header-content {
-    padding: 40px 0 400px 0;
+    // padding: 20px 0 200px 0;
+    height: 90vh;
+    // padding-top: 3em;
+    // background-color: #C02126;
 }
