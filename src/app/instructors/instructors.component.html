@@ -24,8 +24,8 @@
   <div class="row text-light py-4 p-md-4">
 
     <div class="col-md-4" data-aos="fade-up">
-      <p class="lead fs-1" style="color: #C02126;">
-        Karate is our passion.
+      <p class="lead fs-1 text-secondary fw-bold">
+        Karate is our passion
       </p>
 
       <p class="lead">None of our instructors do this for a living.
@@ -39,7 +39,7 @@
     <div class="col-6 col-md-2 text-center mb-3" *ngFor="let instructor of instructors; let i = index">
       
       <!-- CARD -->
-      <div class="card h-100 shadow-1" data-aos="fade-up" [attr.data-aos-delay]="(i+1)*50">
+      <div class="card h-100 shadow-1" data-aos="zoom-in-up" [attr.data-aos-delay]="(i+1)*50">
         <img src="{{instructor.thumbURL}}" class="card-img" alt="Karate Instructor {{instructor.name}}">
 
         <div class="card-body p-1">
