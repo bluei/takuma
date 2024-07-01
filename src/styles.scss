@@ -163,17 +163,6 @@ section {
 }
 
 
-// .darkened-image-lg {
-//     // filter: brightness(50%);
-//     background:linear-gradient(
-//         to bottom, rgba(var(--bs-dark-rgb)) 3%,
-//         rgba(0,0,0,0)), 
-//         url('https://res.cloudinary.com/blue-i/image/upload/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg');
-//     background-size: 100% auto;
-//     background-repeat: no-repeat;
-//     min-height: 50em;
-// }
-
 
 
 // TESTING
@@ -190,6 +179,19 @@ border: 1px solid rgba(86, 61, 124, 0.15);
         rgba(0,0,0,0.1)
     ),
     url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-header-sm {
+    background: #000;
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.1)
+    ),
+    url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_east,h_600,w_800/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
