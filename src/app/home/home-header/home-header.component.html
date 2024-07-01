@@ -1,28 +1,57 @@
 <!-- Large Devices and above-->
-<div class="container-fluid p-0 d-none d-lg-block bg-dark shadow-1 position-relative">
-    <!-- Background Image -->
-    <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
-        class="img-fluid w-100" alt="">
+<div class="parallax-header">
+    <div class="container-fluid p-0 d-none d-lg-block shadow-1 position-relative">
 
-    <!-- Logo Area -->
-    <div class="d-flex mt-2 ms-3 logo-wrapper">
-        <div class="flex-shrink-0">
-            <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo" data-aos="fade-right">
+
+        <div class="row">
+
+
+            <!-- Background Image -->
+            <!-- <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
+            class="img-fluid w-100" alt="">
+            -->
+
+
+            <div style="min-height: 90vh"></div>
+
+
+
+            <!-- Logo Area -->
+            <div class="d-flex mt-2 ms-3 logo-wrapper">
+                <div class="flex-shrink-0">
+                    <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo" data-aos="fade-right">
+                </div>
+
+                <div class="flex-grow-1 ms-3" data-aos="fade-left">
+                    <p class="text-white-50 fs-4 fw-light text-uppercase mb-1" data-aos="fade-down">Welcome to</p>
+                    <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
+                    <p class="text-white fs-4 fw-light" data-aos="fade-up">an extension of the Shōrin-ryū Karatedo
+                        Association
+                        in
+                        Okinawa</p>
+                </div>
+            </div>
+
+            <div class="bottom-center">
+                <a class="btn btn-dark" href="#authentic">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E7"
+                        class="bi bi-arrow-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                    </svg>
+                </a>
+
+            </div>
+
+
+
         </div>
 
-        <div class="flex-grow-1 ms-3" data-aos="fade-left">
-            <p class="text-white-50 fs-4 fw-light text-uppercase mb-1" data-aos="fade-down">Welcome to</p>
-            <p class="text-light fs-1 fw-semibold mb-1">Shidokan Takuma</p>
-            <p class="text-white fs-4 fw-light" data-aos="fade-up">an extension of the Shōrin-ryū Karatedo Association
-                in
-                Okinawa</p>
-        </div>
+
     </div>
-
-    <div class="bottom-center"><a href="#get-started" class="btn btn-primary btn-lg me-4" data-aos="zoom-in">Get
-            Started</a></div>
-
 </div>
+
+
 
 
 <!-- Less than Lg Devices -->
