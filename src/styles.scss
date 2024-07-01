@@ -16,6 +16,8 @@ $aspect-ratios: (
   "9x16": calc(16 / 9 * 100%)
 );
 
+$danger: #C02126;
+
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
