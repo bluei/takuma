@@ -1,5 +1,5 @@
 import { NgModule, OnInit } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withI18nSupport } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -42,7 +42,7 @@ import { HomeFooterComponent } from './home/home-footer/home-footer.component';
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration() //important to get the lifecycle hooks to work!!!
   ],
   bootstrap: [AppComponent]
 })
