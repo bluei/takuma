@@ -1,7 +1,8 @@
 import { DOCUMENT, isPlatformBrowser, isPlatformServer } from '@angular/common';
-import { Component, OnInit, NgZone, AfterViewInit, inject, PLATFORM_ID, Inject, Renderer2, RendererFactory2 } from '@angular/core';
-import AOS from 'aos';
+import { Component, OnInit, afterNextRender, inject, PLATFORM_ID, Renderer2, RendererFactory2 } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import AOS from 'aos';
+
 
 @Component({
   selector: 'app-home',
@@ -12,8 +13,7 @@ export class HomeComponent implements OnInit {
 
   private renderer = inject(Renderer2);
   private rendererFactory = inject(RendererFactory2);
-  private readonly document = inject(DOCUMENT);
-  private readonly platform = inject(PLATFORM_ID);
+
 
   private meta = inject(Meta);
   private titleService = inject(Title);
@@ -22,32 +22,21 @@ export class HomeComponent implements OnInit {
   metaDescription: string = 'The home of Shidokan Takuma, Original Okinawan Karate.';
   metaImage: string = 'https://res.cloudinary.com/blue-i/image/upload/v1720183307/ook/backgrounds/shidokan-takuma-karate-meta-image.png';
 
-
   constructor() {
-    // allows working with the document object
-    // https://www.angulararchitects.io/en/blog/complete-guide-for-server-side-rendering-ssr-in-angular/
 
-    if (isPlatformBrowser(this.platform)) {
-      console.warn("browser");
-      // Safe to use document, window, localStorage, etc. :-)
-      console.log(document);
-      AOS.init({ once: false, duration: 1000 });
-      
-
-      this.renderer = this.rendererFactory.createRenderer(null, null);
-
-      
+    afterNextRender(() => {
+      // this is where we add scripts. also can be added in the index.html for CDNs
+      // REFERENCE
+      // https://dev.to/aswinthgt/mastering-seo-with-angular-v18-5166
+      // https://medium.com/@Codeible/adding-loading-and-using-javascript-in-angular-3281ea4b056b#:~:text=Go%20into%20the%20app%20component,body%20of%20the%20HTML%20page.
+      // https://medium.com/@pavel.salauyou/explanation-of-afternextrender-and-afterrender-functions-in-angular-254c35f1d0c6
+      // https://angular.dev/guide/hydration#errors
 
 
-    }
+      console.log("afterNextRender in home");
+      this.addStructuredData();
+    });
 
-    if (isPlatformServer(this.platform)) {
-      console.warn("server");
-      // Not smart to use document here, however, we can inject it ;-)
-      
-      console.log(this.document);
-      this.addStructuredData(this.document);
-    }
   }
 
 
@@ -66,17 +55,17 @@ export class HomeComponent implements OnInit {
     this.meta.updateTag({ property: 'og:image', content: this.metaImage });
   }
 
-  addStructuredData(document: Document) {
+  addStructuredData() {
     const script = this.renderer.createElement('script');
     script.type = 'application/ld+json';
     script.text = `
       {
         "@context": "http://schema.org",
         "@type": "Organization",
-        "name": "Your Angular App",
-        "url": "https://your-angular-app.com",
-        "logo": "https://your-angular-app.com/logo.png",
-        "description": "Learn more about us at Your Angular App."
+        "name": "Original Okinawan Karate",
+        "url": "https://originalokinawankarate.com",
+        "logo": "https://res.cloudinary.com/blue-i/image/upload/c_scale,w_600/v1717160439/ook/graphics/takuma-rnd-logo-kanji-wht-mobile.png",
+        "description": "` + this.metaDescription + `"
       }`;
 
     this.renderer.appendChild(document.head, script);
