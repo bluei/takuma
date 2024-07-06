@@ -1,5 +1,5 @@
 import { Component, OnInit, NgZone, AfterViewInit, inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser, isPlatformServer } from '@angular/common';
 import AOS from 'aos';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -8,57 +8,52 @@ import { Meta, Title } from '@angular/platform-browser';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements AfterViewInit, OnInit {
-  
+export class AppComponent implements OnInit {
+
 
   private meta = inject(Meta);
   private titleService = inject(Title);
+
   private ngZone = inject(NgZone);
+  private readonly document = inject(DOCUMENT);
+  private readonly platform = inject(PLATFORM_ID);
+
+  constructor() {
+    if (isPlatformBrowser(this.platform)) {
+      console.warn("browser");
+      // Safe to use document, window, localStorage, etc. :-)
+      console.log(document);
+      AOS.init({ once: false, duration: 1000 });
+
+    }
+
+    if (isPlatformServer(this.platform)) {
+      console.warn("server");
+      // Not smart to use document here, however, we can inject it ;-)
+      console.log(this.document);
+    }
+  }
 
   metaTitle: string = 'Shidokan Takuma, Original Okinawan Karate';
   metaDescription: string = 'Welcome to Shidokan Takuma, Authentic Okinawan Karate.';
   metaImage: string = 'https://res.cloudinary.com/blue-i/image/upload/v1720183307/ook/backgrounds/shidokan-takuma-karate-meta-image.png';
 
-  platformId = inject(PLATFORM_ID);
 
-
-  
 
   ngOnInit(): void {
-    
+
     if (typeof document !== 'undefined') {
       // Your browser-specific code here
       console.log('doc not undefined ngOnInit');
       this.updateMetaTags();
-      AOS.init({ once: false, duration: 1000 });
+
     }
-    // if (document.readyState == 'complete') {
-      
-    //   
-    // }
-  }
 
-  ngAfterViewInit(): void {
-    if (isPlatformBrowser(this.platformId)) {
-      this.ngZone.runOutsideAngular(() => {
-        // Run code outside Angular zone
-        if (document.readyState == 'complete') {
-          console.log('doc loaded after view');
-        }
-        console.log('Page ready');
-
-
-        // AOS.init({ once: false, duration: 1000 });
-        
-        
-        // AOS.refresh();
-      });
-    }
   }
 
 
   updateMetaTags() {
-    
+
     this.titleService.setTitle(this.metaTitle);
 
     // Standard Meta Tags
@@ -70,5 +65,7 @@ export class AppComponent implements AfterViewInit, OnInit {
     this.meta.updateTag({ property: 'og:description', content: this.metaDescription });
     this.meta.updateTag({ property: 'og:image', content: this.metaImage });
   }
+
   
+
 }
