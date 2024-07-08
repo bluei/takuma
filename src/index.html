@@ -10,7 +10,36 @@
   <link rel="icon" type="image/png" sizes="16x16" href="../src/assets/icons/favicon-16.png">
   <link rel="icon" type="image/x-icon" href="../src/assets/icons/favicon.ico">
   <link rel="canonical" href="https://shidokankarate.com">
-  
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11037144800"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-11037144800');
+  </script>
+
+  <!-- Event snippet for Call on Mobile Web conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-11037144800/qciMCPCB6MAZEODt9Y4p',
+        'event_callback': callback
+      });
+      return false;
+    }
+  </script>
+
+
+
   <!-- <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-video-player/2.0.2/cld-video-player.min.css"
     crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
@@ -19,9 +48,7 @@
 
 </head>
 
-<body data-bs-spy="scroll" 
-      data-bs-target="#nav" 
-      data-bs-smooth-scroll="true">
+<body data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true">
   <app-root></app-root>
 </body>
 

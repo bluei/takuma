@@ -32,7 +32,9 @@
 
     <div class="col-md-5">
       <div class="py-3 text-center" data-aos="fade-up">
-        <a href="tel:+16169656932" class="btn btn-primary btn-lg mb-2 me-2">
+        <a href="tel:+16169656932" 
+           class="btn btn-primary btn-lg mb-2 me-2"
+           onclick="return gtag_report_conversion('tel:616-965-6932');">
           (616) 965-6932</a>
         <a class="btn btn-warning btn-lg mb-2 ms-0 ms-md-2" href="https://calendly.com/shidokankarate/30min">
           Schedule a Visit
@@ -49,9 +51,19 @@
         </dl>
       </div>
 
-      <div class="text-light text-center py-4" data-aos="fade-up">
+      <div 
+        itemscope itemtype="https://schema.org/LocalBusiness"
+        class="text-light text-center py-4" 
+        data-aos="fade-up">
         <p class="lead fs-2 lh-1">Location</p>
-        <p>5260 Division Ave SE, Kentwood, MI 49508</p>
+        <p>
+          <span itemprop="name">Original Okinawan Karate</span></p>
+        <p>
+          <span itemprop="streetAddress">5260 Division Ave SE</span>, 
+          <span itemprop="addressLocality">Kentwood</span>, 
+          <span itemprop="addressRegion">MI</span> 
+          <span itemprop="postalCode">49508</span>
+        </p>
       </div>
 
     </div>
