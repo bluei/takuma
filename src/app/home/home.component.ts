@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
 
       console.log("afterNextRender in home");
       this.addStructuredData();
+      this.addCalendly();
     });
 
   }
@@ -69,6 +70,16 @@ export class HomeComponent implements OnInit {
       }`;
 
     this.renderer.appendChild(document.head, script);
+  }
+
+  addCalendly() {
+    const script = this.renderer.createElement('script');
+    script.src = "https://assets.calendly.com/assets/external/widget.js"
+    script.type = "text/javascript";
+    script.async;
+
+    this.renderer.appendChild(document.head, script);
+    
   }
 
 

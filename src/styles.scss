@@ -52,6 +52,7 @@ section {
     background: linear-gradient(to right, #C02126 ,transparent);
     margin: 16px 0;
 }
+
 .divider-red-white {
     height: 3px;
     width: 100%;
@@ -182,6 +183,10 @@ border: 1px solid rgba(86, 61, 124, 0.15);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    // fix horiz scroll bars
+    padding-right:15px;
+    padding-left:15px;
 }
 
 .parallax-header-sm {
@@ -195,11 +200,14 @@ border: 1px solid rgba(86, 61, 124, 0.15);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-right:15px;
+    padding-left:15px;
 }
 
 .header-content {
     // padding: 20px 0 200px 0;
     height: 90vh;
+
     // padding-top: 3em;
     // background-color: #C02126;
 }
