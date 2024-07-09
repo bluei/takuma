@@ -2,18 +2,19 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/aos/dist/aos.css";
-@import "../node_modules/cloudinary-video-player/dist/cld-video-player.min.css";
+// @import "../node_modules/cloudinary-video-player/dist/cld-video-player.min.css";
+
 
 /* make changes to the !default Bootstrap variables */
-    // $body-color: green;
-    // change danger color and others to match the branding...
+// $body-color: green;
+// change danger color and others to match the branding...
 
 $aspect-ratios: (
-  "1x1": 100%,
-  "4x3": calc(3 / 4 * 100%),
-  "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%),
-  "9x16": calc(16 / 9 * 100%)
+    "1x1": 100%,
+    "4x3": calc(3 / 4 * 100%),
+    "16x9": calc(9 / 16 * 100%),
+    "21x9": calc(9 / 21 * 100%),
+    "9x16": calc(16 / 9 * 100%)
 );
 
 $danger: #C02126;
@@ -22,15 +23,13 @@ $danger: #C02126;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-
-
 .btn {
     transition: all 0.4s ease;
 }
 
 .btn:hover {
-    transform:translateY(-3px);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    transform: translateY(-3px);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .navbar {
@@ -49,7 +48,7 @@ section {
     width: 100%;
     margin-right: 20px;
     margin-left: 20px;
-    background: linear-gradient(to right, #C02126 ,transparent);
+    background: linear-gradient(to right, #C02126, transparent);
     margin: 16px 0;
 }
 
@@ -58,7 +57,7 @@ section {
     width: 100%;
     margin-right: 20px;
     margin-left: 20px;
-    background: linear-gradient(to right, #C02126 ,#E5E5E7);
+    background: linear-gradient(to right, #C02126, #E5E5E7);
     margin: 16px 0;
 }
 
@@ -70,14 +69,14 @@ section {
 
 .gradient-underline::after {
     // background: #C02126;
-    background: linear-gradient(to right, #C02126, E5E5E7);  
+    background: linear-gradient(to right, #C02126, E5E5E7);
     content: "";
     position: absolute;
     bottom: -20px;
     left: 0;
     height: 8px;
     width: 100%;
- }
+}
 
 .bg-image {
     background-image: url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
@@ -104,8 +103,8 @@ section {
     width: 100%;
     height: 100%;
     // bottom color first, then top 
-    background: linear-gradient(rgba(54,41,28,0.75),rgba(54,41,28,0));
-    z-index: -1;    // Put the overlay behind the text
+    background: linear-gradient(rgba(54, 41, 28, 0.75), rgba(54, 41, 28, 0));
+    z-index: -1; // Put the overlay behind the text
 }
 
 
@@ -121,8 +120,8 @@ section {
 }
 
 .carousel-text {
-    color:black;
-    background: rgba(255,255,255,.5)
+    color: black;
+    background: rgba(255, 255, 255, .5)
 }
 
 // LOGO
@@ -149,7 +148,7 @@ section {
 }
 
 .shadow-1 {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 // FEATURETTE
@@ -167,41 +166,37 @@ section {
 
 
 // TESTING
-.bd-highlight{
-background-color: rgba(86, 61, 124, 0.15);
-border: 1px solid rgba(86, 61, 124, 0.15);
+.bd-highlight {
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.15);
 }
 
 .parallax-header {
     background: #000;
-    background: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.1)
-    ),
-    url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)),
+        url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
     // fix horiz scroll bars
-    padding-right:15px;
-    padding-left:15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .parallax-header-sm {
     background: #000;
-    background: linear-gradient(
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.1)
-    ),
-    url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_west,w_1024,x_271/c_scale,w_390/v1716858011/ook/backgrounds/ShuriCastle-1024.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.1)),
+        url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_west,w_1024,x_271/c_scale,w_390/v1716858011/ook/backgrounds/ShuriCastle-1024.jpg);
     // background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-right:15px;
-    padding-left:15px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .header-content {
@@ -210,4 +205,191 @@ border: 1px solid rgba(86, 61, 124, 0.15);
 
     // padding-top: 3em;
     // background-color: #C02126;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// CALENDLY
+.calendly-inline-widget,
+.calendly-inline-widget *,
+.calendly-badge-widget,
+.calendly-badge-widget *,
+.calendly-overlay,
+.calendly-overlay * {
+    font-size: 16px;
+    line-height: 1.2em
+}
+
+.calendly-inline-widget iframe,
+.calendly-badge-widget iframe,
+.calendly-overlay iframe {
+    display: inline;
+    width: 100%;
+    height: 100%
+}
+
+.calendly-popup-content {
+    position: relative;
+}
+
+.calendly-popup-content.calendly-mobile {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto
+}
+
+.calendly-overlay {
+    position: fixed;
+    top: 3.5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 999; //9999
+    background-color: #a5a5a5;
+    background-color: rgba(31, 31, 31, .4)
+}
+
+.calendly-overlay .calendly-close-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.calendly-overlay .calendly-popup {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    //  width: 80%;
+    width:100%;
+    min-width: 900px;
+    // max-width: 1000px;
+    height: 80%;
+    max-height: 900px; //680
+}
+
+
+@media(max-width:975px) {
+    .calendly-overlay .calendly-popup {
+        position: fixed;
+        top: 3.5rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: none;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+        max-height: none;
+    }
+}
+
+.calendly-overlay .calendly-popup .calendly-popup-content {
+    height: 100%;
+}
+
+.calendly-overlay .calendly-popup-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    color: #fff;
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+    background: url(https://assets.calendly.com/assets/external/close-icon.svg) no-repeat;
+    background-size: contain
+}
+
+@media(max-width:975px) {
+    .calendly-overlay .calendly-popup-close {
+        top: 15px;
+        right: 15px
+    }
+}
+
+.calendly-badge-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    z-index: 9998
+}
+
+.calendly-badge-widget .calendly-badge-content {
+    display: table-cell;
+    width: auto;
+    height: 45px;
+    padding: 0 30px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, .25) 0 2px 5px;
+    font-family: sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer
+}
+
+.calendly-badge-widget .calendly-badge-content.calendly-white {
+    color: #666a73
+}
+
+.calendly-badge-widget .calendly-badge-content span {
+    display: block;
+    font-size: 12px
+}
+
+.calendly-spinner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: -1
+}
+
+.calendly-spinner>div {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: #e1e1e1;
+    border-radius: 50%;
+    vertical-align: middle;
+    animation: calendly-bouncedelay 1.4s infinite ease-in-out;
+    animation-fill-mode: both
+}
+
+.calendly-spinner .calendly-bounce1 {
+    animation-delay: -.32s
+}
+
+.calendly-spinner .calendly-bounce2 {
+    animation-delay: -.16s
+}
+
+@keyframes calendly-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0)
+    }
+
+    40% {
+        transform: scale(1)
+    }
 }

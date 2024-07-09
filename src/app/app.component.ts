@@ -13,8 +13,8 @@ export class AppComponent implements OnInit {
   private meta = inject(Meta);
   private titleService = inject(Title);
 
-  metaTitle: string = 'Shidokan Takuma, Original Okinawan Karate';
-  metaDescription: string = 'Welcome to Shidokan Takuma, Authentic Okinawan Karate.';
+  metaTitle: string = 'Original Okinawan Karate';
+  metaDescription: string = 'Shidokan Takuma, Authentic and Original Okinawan Karate.';
   metaImage: string = 'https://res.cloudinary.com/blue-i/image/upload/v1720183307/ook/backgrounds/shidokan-takuma-karate-meta-image.png';
 
   constructor() {
@@ -22,7 +22,6 @@ export class AppComponent implements OnInit {
       console.log("afterNextRender in constructor");
       AOS.init({ once: false, duration: 1000 });
     });
-
   }
 
 

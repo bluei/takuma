@@ -12,8 +12,7 @@ import AOS from 'aos';
 export class HomeComponent implements OnInit {
 
   private renderer = inject(Renderer2);
-  private rendererFactory = inject(RendererFactory2);
-
+  // private rendererFactory = inject(RendererFactory2);
 
   private meta = inject(Meta);
   private titleService = inject(Title);
@@ -35,7 +34,7 @@ export class HomeComponent implements OnInit {
 
       console.log("afterNextRender in home");
       this.addStructuredData();
-      this.addCalendly();
+      // this.addCalendly();
     });
 
   }
