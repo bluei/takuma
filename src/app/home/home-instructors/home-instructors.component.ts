@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Instructor } from '../_models/instructor';
+import { Instructor } from '../../_models/instructor';
 
 @Component({
-  selector: 'app-instructors',
-  templateUrl: './instructors.component.html',
-  styleUrl: './instructors.component.scss'
+  selector: 'app-home-instructors',
+  templateUrl: './home-instructors.component.html',
+  styleUrl: './home-instructors.component.scss'
 })
-export class InstructorsComponent {
+export class HomeInstructorsComponent {
 
   instructors: Instructor[] = [
     {

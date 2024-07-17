@@ -1,0 +1,56 @@
+<div id="experience" class="container-fluid bg-dark py-5">
+
+    <div class="row text-light mb-3 p-md-4">
+  
+      <div class="col-md-7 order-md-2 d-flex flex-column">
+        <h2 class="featurette-heading lh-1" data-aos="zoom-in-right"><span class="text-secondary">Unmatched</span> Experience
+        </h2>
+        <p class="lead fs-2" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor="#experience">
+          Over {{collectiveYears()}} years combined
+        </p>
+        <div class="divider-red-white"></div>
+        <p class="lead" data-aos="zoom-in-right">Our instructors personally invest time with you to develop effective
+          and practical techniques.</p>
+  
+      </div>
+  
+      <div class="col-md-5 order-md-1" data-aos="zoom-in-right">
+        <img
+          src="https://res.cloudinary.com/blue-i/image/upload/c_fill,e_sharpen:100,g_center,h_340,w_500/v1706841202/ook/people/20230220_Instructors_1200.png"
+          alt="" class="img-fluid _mx-auto featurette-image shadow-1 mt-2 mt-md-0">
+      </div>
+    </div>
+  
+    <div class="row text-light py-4 p-md-4">
+  
+      <div class="col-md-4" data-aos="fade-up">
+        <p class="lead fs-1 text-secondary fw-bold">
+          Karate is our passion
+        </p>
+  
+        <p class="lead">None of our instructors do this for a living.
+        </p>
+        <p class="lead">
+          Unlike commercialized schools driven by profit, we don't sell anything and membership cost is low.
+        </p>
+  
+      </div>
+  
+      <div class="col-6 col-md-2 text-center mb-3" *ngFor="let instructor of instructors; let i = index">
+        
+        <!-- CARD -->
+        <div class="card h-100 shadow-1" data-aos="zoom-in-up" [attr.data-aos-delay]="(i+1)*50">
+          <img src="{{instructor.thumbURL}}" class="card-img" alt="Karate Instructor {{instructor.name}}">
+  
+          <div class="card-body p-1">
+            <h5 class="card-title _mt-2">{{instructor.name}}</h5>
+            <p class="card-text fs-5 _mb-1">{{instructor.dan}}<sup>th</sup> Dan</p>
+            <p class="card-text ls-1">Started {{instructor.dateStarted | date:"MMM yyyy"}} <br>
+              ({{ calculateYears(instructor.dateStarted) }} years)</p>
+          </div>
+        </div>
+        
+      </div>
+  
+    </div>
+  </div>
