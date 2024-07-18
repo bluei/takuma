@@ -131,20 +131,32 @@ section {
     top: 5em;
 }
 
+.ook-text {
+    font-size: 4.5em;
+    font-weight: 700;
+    color: white;
+    opacity: 0.6;
+}
+
+.ook-text-force {
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left:(50%);
+    top: (50%);
+    // bottom: 2.0pc... not worth waiting?
+    font-size: 4.5em;
+    font-weight: 700;
+    color: white;
+    opacity: 0.6;
+}
+
 .logo-lg {
     width: 10em;
 }
 
 .logo-sm {
     width: 7em;
-}
-
-.bottom-center {
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
 }
 
 .shadow-1 {

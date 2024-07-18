@@ -2,42 +2,56 @@
 <div class="parallax-header d-none d-lg-block">
     <div class="container-fluid p-0 shadow-1 position-relative">
 
-        
-        <div class="row">
 
-            <div style="min-height: 90vh"></div>
+        <div class="row d-flex flex-column mt-after-nav" style="min-height: 90vh">
 
-            <!-- Logo Area -->
-            <div class="d-flex mt-2 ms-3 logo-wrapper">
-                <div class="flex-shrink-0">
-                    <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo" data-aos="zoom-in-right"> <!-- data-aos="zoom-in-right" -->
-                </div>
-
-                <div class="flex-grow-1 ms-3" > <!--data-aos="fade-left"   -->
-                    <p class="text-white-50 fs-4 fw-light text-uppercase mb-1" data-aos="fade-down">Welcome to</p>
-                    <p class="text-light fs-1 fw-semibold mb-1" data-aos="zoom-in-left">Shidokan Takuma</p>
-                    <p class="text-white fs-4 fw-light" data-aos="fade-up">an extension of the Shōrin-ryū Karatedo
-                        Association in Okinawa</p>
+            <!-- ROW: Logo and header text -->
+            <div class="row">
+                <div class="d-flex mt-2 ms-3 __logo-wrapper">
+                    <div class="flex-shrink-0">
+                        <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo" data-aos="zoom-in-right">
+                        <!-- data-aos="zoom-in-right" -->
+                    </div>
+    
+                    <div class="flex-grow-1 ms-3"> <!--data-aos="fade-left"   -->
+                        <p class="text-white-50 fs-4 fw-light text-uppercase mb-1" data-aos="fade-down">Welcome to</p>
+                        <p class="text-light fs-1 fw-semibold mb-1" data-aos="zoom-in-left">Shidokan Takuma</p>
+                        <p class="text-white fs-4 fw-light" data-aos="fade-up">an extension of the Shōrin-ryū Karatedo
+                            Association in Okinawa</p>
+                    </div>
+    
                 </div>
             </div>
-            <!-- Set CSS to position in the center of the container and partial transparent -->
-            <!-- <div class="h1 align-top">Original Okinawan Karate</div> -->
 
-            <!-- data-aos="zoom-out-left" data-aos-duration="3000" -->
-            <div class="bottom-center text-center pb-3">
-                <a class="btn btn-dark" href="#authentic"  data-aos="zoom-in-down" data-aos-duration="3000">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E7"
-                        class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
-                </a>
+            <!-- ROW: Original Okinawan Karate -->
+            <div class="row flex-grow-1 align-items-center">
+                <div class="ook-text text-center">
+                    <p>
+                        <span data-aos="fade-in-up" data-aos-delay="1000" data-aos-duration="2000">Original. </span>
+                        <span data-aos="fade-in" data-aos-delay="1800" data-aos-duration="2000">Okinawan. </span>
+                        <span data-aos="fade-in" data-aos-delay="2600" data-aos-duration="2000">Karate.</span>
+                    </p>
+                </div>
             </div>
-
-
-
+            
+            <!-- ROW: Arrow Icon -->
+            <div class="row align-items-end pb-2">
+                <div class="text-center">
+                    <a class="btn btn-dark" href="#authentic" 
+                        data-aos="zoom-out-down" 
+                        data-aos-duration="2000"
+                        data-aos-delay="3000"
+                        data-aos-anchor="#nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E7"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
         </div>
-
 
     </div>
 </div>
