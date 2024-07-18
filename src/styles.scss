@@ -115,6 +115,10 @@ section {
     margin-top: 3.5rem;
 }
 
+.pt-header-lg {
+    padding-top: 5.0rem;
+}
+
 .brightness-75 {
     filter: brightness(75%);
 }
@@ -131,25 +135,13 @@ section {
     top: 5em;
 }
 
-.ook-text {
+.ook-text-lg {
     font-size: 4.5em;
     font-weight: 700;
     color: white;
     opacity: 0.6;
 }
 
-.ook-text-force {
-    position: absolute;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    left:(50%);
-    top: (50%);
-    // bottom: 2.0pc... not worth waiting?
-    font-size: 4.5em;
-    font-weight: 700;
-    color: white;
-    opacity: 0.6;
-}
 
 .logo-lg {
     width: 10em;
