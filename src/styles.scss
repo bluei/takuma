@@ -22,7 +22,7 @@ $danger: #C02126;
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
+// GLOBAL 
 .btn {
     transition: all 0.4s ease;
 }
@@ -36,20 +36,18 @@ $danger: #C02126;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.4);
 }
 
-section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    z-index: 2;
-    position: relative;
+.mt-after-nav {
+    // Add spacing below fixed nav bar
+    // background-color: darkgray;
+    margin-top: 3.5rem;
 }
 
-.divider-red {
-    height: 3px;
-    width: 100%;
-    margin-right: 20px;
-    margin-left: 20px;
-    background: linear-gradient(to right, #C02126, transparent);
-    margin: 16px 0;
+.pt-header {
+    padding-top: 5.0rem;
+}
+
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 .divider-red-white {
@@ -60,6 +58,25 @@ section {
     background: linear-gradient(to right, #C02126, #E5E5E7);
     margin: 16px 0;
 }
+
+// USED? ----------------------------------------------------
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 2;
+    position: relative;
+}
+
+
+.divider-red {
+    height: 3px;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    background: linear-gradient(to right, #C02126, transparent);
+    margin: 16px 0;
+}
+
 
 .gradient-underline {
     padding-bottom: 4px;
@@ -78,17 +95,20 @@ section {
     width: 100%;
 }
 
-.bg-image {
+
+
+
+.DELETEbg-image {
     background-image: url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
 }
 
-.bg-cover {
+.DELETEbg-cover {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
-.hero-section {
+.DELETEhero-section {
     min-height: 75vh;
     display: flex;
     justify-content: center;
@@ -96,7 +116,7 @@ section {
     background-attachment: fixed;
 }
 
-.bg-overlay {
+.DELETEbg-overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -109,15 +129,6 @@ section {
 
 
 
-.mt-after-nav {
-    // Add spacing below fixed nav bar
-    // background-color: darkgray;
-    margin-top: 3.5rem;
-}
-
-.pt-header-lg {
-    padding-top: 5.0rem;
-}
 
 .brightness-75 {
     filter: brightness(75%);
@@ -128,18 +139,27 @@ section {
     background: rgba(255, 255, 255, .5)
 }
 
-// LOGO
-.logo-wrapper {
-    // flex-basis: 20%;
-    position: absolute;
-    top: 5em;
+
+// ------------------- LOGO AREA ---------------------------
+.text-tagline {
+    color: white;
+    line-height: 1.3 !important;
+    font-size: 1.0rem;
+    font-weight: 300 !important;
 }
 
-.ook-text-lg {
-    font-size: 4.5em;
+.text-ook-lg {
+    font-size: 4.5rem;
     font-weight: 700;
     color: white;
     opacity: 0.6;
+}
+
+.text-ook {
+    font-size: 4.0rem;
+    font-weight: 700;
+    color: white;
+    opacity: 0.7;
 }
 
 
@@ -151,9 +171,7 @@ section {
     width: 7em;
 }
 
-.shadow-1 {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+
 
 // FEATURETTE
 .featurette-divider {
@@ -202,16 +220,6 @@ section {
     padding-right: 15px;
     padding-left: 15px;
 }
-
-.header-content {
-    // padding: 20px 0 200px 0;
-    height: 90vh;
-
-    // padding-top: 3em;
-    // background-color: #C02126;
-}
-
-
 
 
 

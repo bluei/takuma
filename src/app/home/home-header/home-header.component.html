@@ -2,11 +2,10 @@
 <div class="parallax-header d-none d-lg-block">
     <div class="container-fluid p-0 shadow-1 position-relative">
 
-
         <div class="row d-flex flex-column" style="min-height: 100vh">
 
             <!-- ROW: Logo and header text -->
-            <div class="row pt-header-lg">
+            <div class="row pt-header">
                 <div class="d-flex ms-3">
                     <div class="flex-shrink-0">
                         <img [src]="srcLogo" class="img-fluid logo-lg shadow" alt="Logo" data-aos="zoom-in-right">
@@ -25,7 +24,7 @@
 
             <!-- ROW: Original Okinawan Karate -->
             <div class="row flex-grow-1 align-items-center">
-                <div class="ook-text-lg text-center">
+                <div class="text-ook-lg text-center">
                     <p>
                         <span data-aos="fade-in-up" data-aos-delay="1000" data-aos-duration="2000">Original. </span>
                         <span data-aos="fade-in" data-aos-delay="1800" data-aos-duration="2000">Okinawan. </span>
@@ -61,44 +60,65 @@
 
 
 
-<!-- Less than Lg Devices -->
+<!-- MOBILE Devices -->
 <div class="parallax-header-sm d-lg-none">
-    <div class="container-fluid p-0  shadow position-relative">
+    <div class="container-fluid p-0 shadow position-relative">
 
-        <div class="row">
+        <div class="row d-flex flex-column" style="min-height: 100vh">
 
-            <div style="min-height: 90vh"></div>
-
-            <!-- Logo Area -->
-            <div class="d-flex pt-2 logo-wrapper">
-                <div class="flex-shrink-0">
-                    <img [src]="srcLogo" class="mx-3 img-fluid logo-sm shadow" alt="Logo" data-aos="zoom-in-right">
-                </div>
-
-                <div class="flex-grow-1 ms-1" data-aos="fade-up">
-                    <p class="text-white-50 fs-5 fw-light  text-uppercase mb-0">Welcome to</p>
-                    <p class="text-light fs-2 fw-semibold mb-1">Shidokan Takuma</p>
-                    <p class="text-white small fw-light _lh-1 ">an extension of the Shōrin-ryū Karatedo Association in
-                        Okinawa</p>
+            <!-- SM ROW: Logo and Header Text -->
+            <div class="row pt-header pe-0">
+                <div class="d-flex pe-0">
+                    <div class="flex-shrink-0">
+                        <img [src]="srcLogo" class="ms-1 img-fluid logo-sm shadow" alt="Logo" 
+                             data-aos="zoom-in-right">
+                    </div>
+    
+                    <div class="flex-grow-1 ms-3" >
+                        <p class="text-white-50 fs-5 fw-light text-uppercase mb-0" 
+                            data-aos="fade-down-right">
+                            Welcome to
+                        </p>
+                        <p class="text-light fs-3 fw-semibold mb-1" 
+                            data-aos="zoom-in-right" data-aos-delay="200">
+                            Shidokan Takuma
+                        </p>
+                        <p class="text-tagline" data-aos="fade-up-right" data-aos-delay="400">
+                            an extension of the Shōrin-ryū Karatedo Association in Okinawa
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <div class="bottom-center text-center pb-3">
-                <a class="btn btn-dark" href="#authentic">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E7"
-                        class="bi bi-arrow-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
-                    </svg>
-                </a>
+            <!-- SM ROW: Original Okinawan Karate -->
+            <div class="row flex-grow-1 align-items-center">
+                <div class="text-ook text-center">
+                        <p data-aos="fade-in" data-aos-delay="1000" data-aos-duration="2000">Original.</p>
+                        <p data-aos="fade-in" data-aos-delay="1800" data-aos-duration="2000">Okinawan.</p>
+                        <p data-aos="fade-in" data-aos-delay="2600" data-aos-duration="2000">Karate.</p>
+                </div>
+            </div>
+
+            <!-- SM ROW: Arrow Icon -->
+            <div class="row align-items-end pb-2">
+                <div class="row align-items-end pb-2">
+                    <div class="text-center">
+                        <a class="btn btn-dark" href="#authentic" 
+                            data-aos="zoom-out-down" 
+                            data-aos-duration="2000"
+                            data-aos-delay="3000"
+                            data-aos-anchor="#nav">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#E5E5E7"
+                                class="bi bi-arrow-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
 
         </div>
-
-        <!-- Background Image CROP WIDTH ON LEFT TO MAKE TALLER -->
-        <!-- <img src="https://res.cloudinary.com/blue-i/image/upload/c_crop,g_east,h_600,w_800/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg"
-        class="img-fluid w-100 brightness-75"> -->
-
 
     </div>
 </div>
