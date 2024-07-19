@@ -3,21 +3,21 @@
   <div class="row p-md-4">
 
     <!-- col get started -->
-    <div class="col-md-5 order-md-2 d-flex align-items-start flex-column" data-aos="fade-up"
+    <div class="col-md-5 order-md-2 d-flex align-items-start flex-column" data-aos="zoom-in-right"
       data-aos-anchor="#get-started">
       <div class="mb-auto">
-        <h2 class="featurette-heading lh-1">
+        <h2 class="featurette-heading lh-1 text-center text-md-start" data-aos="zoom-in-right" data-aos-delay="200" data-aos-anchor="#get-started">
           <!-- data-aos="zoom-in-right"-->
           Get <span class="text-muted">Started</span>
         </h2>
-        <div class="divider-red"></div>
+        <div class="divider-red" data-aos="fade-in" data-aos-anchor="#get-started" data-aos-delay="400"></div>
 
-        <p class="lead fs-2 lh-1 text-dark">
+        <p class="lead fs-2 lh-1 text-dark text-center text-md-start" data-aos="zoom-in-right" data-aos-delay="600">
           <!-- data-aos="zoom-in-right"-->
           Take the first step!
         </p>
 
-        <p class="lead">
+        <p class="lead text-center text-md-start">
           We offer a 6-week trial to see if it's right for you.
         </p>
       </div>
@@ -35,12 +35,12 @@
           <!-- Calendly link widget begin -->
 
           <!-- See if Analytics picks up the click event -->
-          <a href="tel:+16169656932" class="btn btn-primary btn-lg mb-2 mb-md-0 me-2 fw-bold flex-grow-1" data-aos="zoom-in-up">
+          <a id="call-button" href="tel:+16169656932" class="btn btn-primary btn-lg mb-2 mb-md-0 me-2 fw-bold flex-fill" data-aos="zoom-in-up">
             Call<br><span class="fw-normal" style="font-size:0.8em">(616) 965-6932</span></a>
 
           <!-- Calendly Popup. Move function to component...
                 https://medium.com/@Codeible/adding-loading-and-using-javascript-in-angular-3281ea4b056b#:~:text=Go%20into%20the%20app%20component,body%20of%20the%20HTML%20page. -->
-          <a href="" class="btn btn-primary btn-lg mb-2 mb-md-0 fw-bold flex-grow-1" data-aos="zoom-in-up"
+          <a id="calendly-button" href="" class="btn btn-primary btn-lg mb-2 mb-md-0 fw-bold flex-fill" data-aos="zoom-in-up"
             onclick="Calendly.initPopupWidget({url: 'https://calendly.com/shidokankarate/30min?hide_event_type_details=0&hide_gdpr_banner=1'});return false;">Schedule
             <br><span class="fw-normal" style="font-size:0.8em">(pick a time)</span>
           </a>
