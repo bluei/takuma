@@ -22,6 +22,8 @@ $danger: #C02126;
 /* finally, import Bootstrap to set the changes! */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
 // GLOBAL 
 .btn {
     transition: all 0.4s ease;
@@ -95,37 +97,6 @@ section {
     width: 100%;
 }
 
-
-
-
-.DELETEbg-image {
-    background-image: url(https://res.cloudinary.com/blue-i/image/upload/c_crop,g_center,h_400,w_1024/v1716858001/ook/backgrounds/ShuriCastle-1024-gradient.jpg);
-}
-
-.DELETEbg-cover {
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-}
-
-.DELETEhero-section {
-    min-height: 75vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-.DELETEbg-overlay {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    // bottom color first, then top 
-    background: linear-gradient(rgba(54, 41, 28, 0.75), rgba(54, 41, 28, 0));
-    z-index: -1; // Put the overlay behind the text
-}
 
 
 

@@ -4,5 +4,5 @@ export interface Instructor {
     dateStarted: Date,
     thumbURL: string,
     imageURL: string,
-    bio: string,
+    bio: string    
 }

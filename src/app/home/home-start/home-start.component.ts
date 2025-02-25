@@ -19,16 +19,13 @@ export class HomeStartComponent {
 
   }
 
+  // TODO: Decide it this code is needed
   addCalendly() {
     const script = this.renderer.createElement('script');
     script.src = "https://assets.calendly.com/assets/external/widget.js"
     script.type = "text/javascript";
     script.async;
-
     this.renderer.appendChild(document.head, script);
-
-    
-    
   }
 
 }
